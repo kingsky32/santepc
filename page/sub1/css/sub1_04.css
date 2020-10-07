@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+.sub_container {
+  padding-bottom: 309px;
+}
+
+.sub_container .inner {
+  width: 1300px;
+}
+
+.sub_container .inner .title {
+  font-family: "NEXON Lv2 Gothic";
+  font-size: 36px;
+  line-height: 53px;
+  letter-spacing: -2px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 35px;
+}
+
+.sub_container hr {
+  display: block;
+  margin: 0 auto;
+  width: 66px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #008574;
+  margin-bottom: 57px;
+}
+
+.sub_container section {
+  display: flex;
+}
+
+.sub_container section:not(:last-child) {
+  margin-bottom: 109px;
+}
+
+.sub_container section article {
+  flex: 1;
+}
+
+.sub_container section article h5 {
+  font-family: "Titillium Web";
+  font-weight: 600;
+  font-size: 80px;
+  letter-spacing: -2px;
+  color: #cdeeea;
+  margin-bottom: 15px;
+  padding-top: 100px;
+}
+
+.sub_container section article span {
+  display: inline-block;
+  font-family: "NEXON Lv2 Gothic";
+  font-size: 30px;
+  font-weight: 500;
+  color: #282828;
+  letter-spacing: -2px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.sub_container section article span::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 193px;
+  height: 1px;
+  background: #535353;
+  top: 0;
+  bottom: 0;
+  right: 118px;
+  margin: auto 0;
+}
+
+.sub_container section:nth-of-type(2) article span::after {
+  width: 485px;
+  right: auto;
+  left: 115%;
+}
+
+.sub_container section:nth-of-type(3) article span::after {
+  right: 300px;
+}
+
+.sub_container section article p {
+  font-family: "NEXON Lv2 Gothic";
+  font-size: 18px;
+  line-height: 30px;
+  color: #282828;
+  letter-spacing: -2px;
+  margin-bottom: 40px;
+}
+
+.sub_container section article p.notice {
+  font-family: "NEXON Lv2 Gothic";
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #fa5f4e;
+}
+
+.sub_container section article p.notice b {
+  display: block;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.sub_container section article a.more {
+  font-family: "NEXON Lv2 Gothic";
+  display: flex;
+  width: 220px;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d2d2d2;
+  box-sizing: border-box;
+  color: #979797;
+  font-size: 15px;
+  letter-spacing: -2px;
+}
+
+.sub_container section article a.more:not(:last-child) {
+  margin-bottom: 29px;
+}
+
+.sub_container section:nth-of-type(2) article:nth-child(1) {
+  order: 2;
+  padding: 0;
+}
+
+.sub_container section:nth-of-type(2) article:nth-child(2) {
+  order: 1;
+}
+
+.sub_container section article img {
+  width: 660px;
+}
+
+.sub_container section article:nth-child(1) {
+  width: 660px;
+  flex: 0 0 660px;
+  padding-right: 150px;
+}

@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+.inner {
+  width: 1300px;
+}
+
+.sub_container {
+  padding-bottom: 300px;
+}
+
+.sub_container h3.title {
+  font-family: "Titillium Web";
+  margin-top: 120px;
+  margin-bottom: 55px;
+  font-size: 80px;
+  color: #119786;
+  font-weight: 200;
+  text-align: center;
+}
+
+.sub_container .map {
+  width: 100%;
+  height: 540px;
+  margin-bottom: 50px;
+}
+
+.sub_container h5.addr {
+  font-family: "NEXON Lv2 Gothic";
+  font-size: 30px;
+  color: #282828;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.sub_container .tel {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #535353;
+  margin-bottom: 45px;
+}
+
+.sub_container .tel article {
+  color: #282828;
+  font-family: "NEXON Lv2 Gothic";
+  font-weight: 400;
+  margin-bottom: 45px;
+}
+
+.sub_container .tel article:not(:last-child) {
+  margin-right: 30px;
+}
+
+.sub_container .tel article b {
+  font-weight: 600;
+}
+
+.sub_container .route-container {
+  display: flex;
+}
+
+.sub_container .route-container article {
+  display: flex;
+  flex: 1;
+}
+
+.sub_container .route-container article .icon {
+  padding-left: 50px;
+  padding-right: 30px;
+}
+
+.sub_container .route-container article .icon img {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.sub_container .route-container article .icon span {
+  display: block;
+  font-family: "NEXON Lv2 Gothic";
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 600;
+  color: #aaaaaa;
+}
+
+.sub_container .route-container article .route {
+  padding-top: 25px;
+}
+
+.sub_container .route-container article .route h5 {
+  font-family: "NEXON Lv2 Gothic";
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: #282828;
+  margin-bottom: 15px;
+}
+
+.sub_container .route-container article .route p {
+  font-size: 18px;
+  color: #282828;
+  letter-spacing: -1px;
+  line-height: 30px;
+}
+
+.sub_container .route-container article .route p span {
+  padding: 3px 10px;
+  font-size: 14px;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.sub_container .route-container article .route p span.sin-bun-dang-sun {
+  background-color: #ffda0f;
+}
+
+.sub_container .route-container article .route p span.gu-ho-sun {
+  background-color: #c4a80c;
+  padding: 3px 19px;
+  color: #ffffff;
+}
+
+.sub_container .route-container article .route p span.ji-sun {
+  background-color: #3aaf23;
+  color: #ffffff;
+}
+
+.sub_container .route-container article .route p span.gan-sun {
+  background-color: #2354af;
+  color: #ffffff;
+}
+
+.sub_container .route-container article .route p b.grey {
+  color: #c0c0c0;
+}
