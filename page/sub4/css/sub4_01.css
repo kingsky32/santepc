@@ -1,0 +1,47 @@
+@charset "utf-8";
+* {letter-spacing:1px; outline:unset;}
+
+.sub_container .inner > p {font-family: "NEXON Lv2 Gothic"; font-size: 24px; line-height: 40px; font-weight: 500; letter-spacing: -1px; text-align: center; margin-bottom:25px;}
+.sub_container .inner .title {font-family: "NEXON Lv2 Gothic"; font-size: 36px; letter-spacing: -2px; font-weight: 500; text-align: center; margin-top: 120px; margin-bottom: 35px;}
+.sub_container hr {display: block; margin: 0 auto; width: 66px; border-width: 1px; border-style: solid; border-color: #008574; margin-bottom: 57px;}
+
+#option {position:relative; background:#07605b; margin-bottom:125px;}
+#option .inner {max-width:1005px; padding:65px 0 110px;}
+#option .inner ul {}
+#option .inner ul:after {content:''; display:block; visibility:hidden; clear:both;}
+#option .inner ul li {float:left; width:19.75%; margin-right:7%; box-sizing:border-box; padding-left:65px;}
+#option .inner ul li:last-of-type {margin-right:0;}
+#option .inner ul li p{display:block; font-size:18px; font-weight:bold; color:#fff; font-family:"NEXON Lv2 Gothic"; line-height:1; margin-bottom:10px;}
+#option .inner ul li select {height:50px; width:160px; background:#fff; border:1px solid #ddd; color:#999; text-align:left; font-size:18px; line-height:50px; box-sizing:border-box; padding-left:10px; outline:unset;}
+#option .inner ul li:first-of-type {background:url('../img/option1.png')no-repeat left bottom;}
+#option .inner ul li:nth-of-type(2) {background:url('../img/option2.png')no-repeat left bottom;}
+#option .inner ul li:nth-of-type(3) {background:url('../img/option3.png')no-repeat left bottom;}
+#option .inner ul li:last-of-type {background:url('../img/option4.png')no-repeat left bottom;}
+
+#revenue .inner p {margin-bottom:20px;}
+#revenue table {display:table; width:100%; text-align:center; margin-bottom:50px;}
+#revenue table th{width:25%; border:1px solid #dcdcdc; color:#282828;  font-family: "NEXON Lv2 Gothic"; font-size:18px;line-height:60px; font-weight:bold;}
+#revenue table td{width:25%; border:1px solid #dcdcdc; color:#282828; font-family: "NEXON Lv2 Gothic"; font-size:18px;line-height:60px; font-weight:500;}
+#revenue table .title {background:#f7f7f7;}
+#revenue table .content {background:#fff;} 
+#revenue table .content tr:last-of-type {border-top:3px solid #008574; background:#e9f6f4;}
+#revenue table .content tr:last-of-type td {font-weight:bold;}
+
+#spend .inner p {margin-bottom:20px;}
+#spend table {display:table; width:100%; text-align:center; margin-bottom:50px;}
+#spend table th{width:25%; border:1px solid #dcdcdc; color:#282828;  font-family: "NEXON Lv2 Gothic"; font-size:18px;line-height:60px; font-weight:bold;}
+#spend table td{width:25%; border:1px solid #dcdcdc; color:#282828; font-family: "NEXON Lv2 Gothic"; font-size:18px;line-height:60px; font-weight:500;}
+#spend table .title {background:#f7f7f7;}
+#spend table .content {background:#fff;} 
+#spend table .content tr:last-of-type {border-top:3px solid #008574; background:#e9f6f4;}
+#spend table .content tr:last-of-type td {font-weight:bold;}
+
+#total .inner p {margin-bottom:20px; font-weight:bold;}
+#total table {display:table; width:100%; text-align:center; margin-bottom:185px;}
+#total table th{color:#fff; border-right:1px solid #dcdcdc; font-family: "NEXON Lv2 Gothic"; font-size:18px;line-height:60px; font-weight:bold;}
+#total table th:last-of-type {border-right:0;}
+#total table td{width:50%; border:1px solid #dcdcdc; color:#282828; font-family: "NEXON Lv2 Gothic"; font-size:18px;line-height:60px; font-weight:bold}
+#total table .title {background:#008574;}
+#total table .content tr td:last-of-type {color:#008574;}
+
+a.pink_btn {position:absolute; left:50%; bottom:-30px; transform:translateX(-50%);}

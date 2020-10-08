@@ -1,0 +1,325 @@
+.section-01 {
+  padding-top: 126px;
+  background-color: #f5efe9;
+  position: relative;
+}
+
+.section-01 img {
+  display: block;
+  margin: 0 auto;
+  width: 374px;
+  margin-bottom: 50px;
+}
+
+.section-01 h3.title {
+  font-size: 36px;
+  color: #282828;
+  font-family: "GmarketSans";
+  font-weight: 500;
+  letter-spacing: -2px;
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.section-01 h3.title b {
+  font-weight: 600;
+}
+
+.section-01 p {
+  font-family: "NEXON Lv2 Gothic";
+  font-size: 20px;
+  color: #282828;
+  font-weight: 500;
+  text-align: center;
+  line-height: 32px;
+  margin-bottom: 53px;
+}
+
+.section-01 iframe {
+  display: block;
+  margin: 0 auto;
+  width: 880px;
+  height: 495px;
+  padding-bottom: 118px;
+}
+
+.section-01 span {
+  position: absolute;
+  font-family: "Titillium Web";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 100px;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+}
+
+.section-02 {
+  padding: 98px 0 162px;
+}
+
+.section-02 .inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-02 article {
+  flex: 1;
+}
+
+.section-02 article:not(:last-child) {
+  margin-right: 33px;
+}
+
+.section-02 article .thumb {
+  margin-bottom: 30px;
+}
+
+.section-02 article p {
+  font-family: "NEXON Lv2 Gothic";
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -2px;
+  color: #282828;
+  font-weight: 500;
+  text-align: center;
+}
+
+.section-03 .inner {
+  display: flex;
+}
+
+.section-03 .inner article:nth-child(1) span {
+  font-family: "GmarketSans";
+  font-size: 36px;
+  letter-spacing: -2px;
+  font-weight: 500;
+  color: #ff756e;
+  margin-bottom: 26px;
+  display: block;
+}
+
+.section-03 .inner article:nth-child(1) h4 {
+  font-family: "GmarketSans";
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 82px;
+  letter-spacing: -2px;
+  color: #05302d;
+  margin-bottom: 35px;
+}
+
+.section-03 .inner article:nth-child(1) h4 b {
+  color: #008574;
+  font-weight: 600;
+}
+
+.section-03 .inner article:nth-child(1) p {
+  font-size: 20px;
+  line-height: 32px;
+  color: #282828;
+}
+
+.section-03 .inner article.order {
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 15px 45px;
+  position: relative;
+}
+
+.section-03 .inner article.order::after {
+  display: block;
+  content: "";
+  position: absolute;
+  background-image: url("/img/sub/sub2/sub2_01_scook_dotted.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  z-index: 15;
+  pointer-events: none;
+}
+
+.section-03 .inner article.order::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-image: url("/img/sub/sub2/sub2_01_scook_brakets.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  z-index: 15;
+  pointer-events: none;
+}
+
+.section-03 .inner article.order div {
+  flex: 1 1 50%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-03 .inner article.order div span {
+  font-family: "NEXON Lv2 Gothic";
+  font-size: 18px;
+  padding: 7px 20px;
+  position: relative;
+  background-color: #ff756e;
+  border-radius: 15px;
+  width: 220px;
+  color: #ffffff;
+}
+
+.section-03 .inner article.order div:nth-child(2) span,
+.section-03 .inner article.order div:nth-child(3) span {
+  background-color: #008574;
+}
+
+.section-03 .inner article.order div span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -18px;
+  width: 1px;
+  height: 1px;
+  border-top: 10px solid #ff756e;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+
+.section-03 .inner article.order div:nth-child(2) span::after,
+.section-03 .inner article.order div:nth-child(3) span::after {
+  border-top-color: #008574;
+}
+
+.section-03 .inner article.order div p {
+  font-family: "NEXON Lv2 Gothic";
+  font-size: 40px;
+  color: #282828;
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+.section-04 .title {
+  font-family: "NEXON Lv2 Gothic";
+  font-size: 36px;
+  line-height: 53px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 190px;
+  margin-bottom: 35px;
+  color: #282828;
+}
+
+.section-04 hr {
+  display: block;
+  margin: 0 auto;
+  width: 66px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #008574;
+  margin-bottom: 57px;
+}
+
+.section-04 section article {
+  padding: 70px 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-position: 15% center;
+}
+
+.section-04 section article:nth-child(1) {
+  background-color: #272525;
+}
+
+.section-04 section article:nth-child(2) {
+  background-color: #fdfdfd;
+  background-position: 80% center;
+}
+
+.section-04 section article:nth-child(3) {
+  background-color: #594026;
+  background-position: 35% center;
+}
+
+.section-04 section article:nth-child(4) {
+  background-color: #d1cbc7;
+  background-position: right center;
+}
+
+.section-04 section article:nth-child(5) {
+  background-color: #dfd6ce;
+  background-position: left 35%;
+  background-size: 55%;
+}
+
+.section-04 section article:nth-child(1) .text span,
+.section-04 section article:nth-child(1) .text h5,
+.section-04 section article:nth-child(1) .text a,
+.section-04 section article:nth-child(3) .text h5,
+.section-04 section article:nth-child(3) .text span,
+.section-04 section article:nth-child(3) .text a {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.section-04 section article .inner {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  align-items: center;
+  text-align: right;
+}
+
+.section-04 section article:nth-child(2n) .inner {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.section-04 section article .text span {
+  font-family: "NEXON Lv2 Gothic";
+  font-size: 24px;
+  color: #313131;
+  font-weight: 500;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.section-04 section article .text h5 {
+  font-family: "GmarketSans";
+  font-size: 64px;
+  color: #313131;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.section-04 section article .text a {
+  font-family: "GmarketSans";
+  font-size: 18px;
+  padding: 17px 44px;
+  color: #313131;
+  border: 1px solid #313131;
+  display: inline-block;
+}

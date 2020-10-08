@@ -40,12 +40,12 @@ if(!defined('_INDEX_')) { // index가 아닐때 실행
                 </li>
                 <li><a href="/page/sub2/sub2_01.php">성공 경쟁력</a>
                     <ol>
-                        <li><a href="/page/sub2/sub2_01.php">PC방 전문상권분석</a></li>
-                        <li><a href="/page/sub2/sub2_02.php">전용F&amp;B</a></li>
-                        <li><a href="/page/sub2/sub2_03.php">특화된 전용 책상</a></li>
-                        <li><a href="/page/sub2/sub2_04.php">가맹관리 시스템</a></li>
-                        <li><a href="/page/sub2/sub2_05.php">전문 PC관리 시스템</a></li>
-                        <li><a href="/page/sub2/sub2_06.php">Shop In Shop 시스템</a></li>
+                        <li><a href="/page/sub2/sub2_01.php#page1">PC방 전문상권분석</a></li>
+                        <li><a href="/page/sub2/sub2_01.php#page2">Shop In Shop 시스템</a></li>
+                        <li><a href="/page/sub2/sub2_01.php#page3">전용F&amp;B</a></li>
+                        <li><a href="/page/sub2/sub2_01.php#page4">특화된 전용 책상</a></li>
+                        <li><a href="/page/sub2/sub2_01.php#page5">가맹관리 시스템</a></li>
+                        <li><a href="/page/sub2/sub2_01.php#page6">전문 PC관리 시스템</a></li>
                     </ol>
                 </li>
                 <li><a href="/page/sub3/sub3_01.php">창업혜택</a>

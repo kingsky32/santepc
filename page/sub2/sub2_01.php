@@ -16,19 +16,19 @@
   </div>
   <nav class="lnb">
     <ul>
-      <li class="on"><a href="/page/sub2/sub2_01.php">PC방 전문상권분석</a></li>
-      <li><a href="/page/sub2/sub2_02.php">전용F&amp;B</a></li>
-      <li><a href="/page/sub2/sub2_03.php">특화된 전용 책상</a></li>
-      <li><a href="/page/sub2/sub2_04.php">가맹관리 시스템</a></li>
-      <li><a href="/page/sub2/sub2_05.php">전문 PC관리 시스템</a></li>
-      <li><a href="/page/sub2/sub2_06.php">Shop In Shop 시스템</a></li>
+      <li class="on"><a href="#page1">PC방 전문상권분석</a></li>
+      <li><a href="#page2">Shop In Shop 시스템</a></li>
+      <li><a href="#page3">전용F&amp;B</a></li>
+      <li><a href="#page4">특화된 전용 책상</a></li>
+      <li><a href="#page5">가맹관리 시스템</a></li>
+      <li><a href="#page6">전문 PC관리 시스템</a></li>
     </ul>
   </nav>
   <div class="inner">
     <h3 class="title">PC방은 보통 타업종들과의 상권분석이 다릅니다.</h3>
     <hr>
   </div>
-  <section class="section-01">
+  <section class="section-01" id="page1">
     <div class="inner">
       <article>
         <div class="icon">
@@ -76,7 +76,7 @@
       <a href="">PC방 전문 상권분석 신청하기</a>
     </div>
   </section>
-  <section class="section-03">
+  <section class="section-03" id="page2">
     <h3 class="title">PC방 운영 21년, 샹떼PC방은 먹거리 Shop in Shop 시스템을<br>제일 먼저 도입하였습니다.</h3>
     <hr>
     <section>
@@ -100,7 +100,7 @@
   </section>
   <h3 class="title">먹거리매출도 샹떼PC방이 No.1 입니다.</h3>
   <hr>
-  <section class="section-04">
+  <section class="section-04" id="page3">
     <div class="inner">
       <article class="text">
         <p class="detail-1">언제까지 PC방에서 게임만 할래?<br>
@@ -115,11 +115,11 @@
       </article>
       <article class="img">
         <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_04.png" alt="img">
-        <a href="">샹떼 F&B 자세히 보러가기</a>
+        <a href="/page/sub2/sub2_01/sub2_01_scook.php">샹떼 F&B 자세히 보러가기</a>
       </article>
     </div>
   </section>
-  <section class="section-05">
+  <section class="section-05" id="page4">
     <h3 class="title">특화된 전용책상 샹떼PC방의 ‘슬라이딩 트윈 데스크’</h3>
     <hr>
     <div class="inner">
@@ -171,7 +171,7 @@
       </article>
     </div>
   </section>
-  <section class="section-06">
+  <section class="section-06" id="page5">
     <div class="inner">
       <h5 class="title">전 직원이 참여하는 샹떼PC방의 가맹관리시스템</h5>
       <hr>
@@ -256,7 +256,8 @@
 
     </div>
   </section>
-  <section class="section-08" style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_bg_01.png')">
+  <section class="section-08" id="page6"
+    style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_bg_01.png')">
     <h5 class="title">신속한 대응, 샹떼PC방의 전문PC관리 시스템</h5>
     <hr>
     <div class="inner">
@@ -302,7 +303,22 @@
 </div>
 
 <script>
-  $('.slider').slick();
+  $('#gnb li:nth-child(2) a').on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({
+      'scrollTop': $($(this).attr('href').slice(-6)).offset().top
+    }, 500);
+  });
+
+  $('.lnb li a').on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({
+      'scrollTop': $($(this).attr('href')).offset().top
+    }, 500);
+  });
+
+
+  $('.slider').slick(); 
 </script>
 
 <!-- 여기 아래부터 모든 HTML 요소 구성 끝 -->
