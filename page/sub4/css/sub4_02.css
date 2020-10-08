@@ -1,45 +1,212 @@
 @charset "utf-8";
-* {letter-spacing:1px; outline:unset;}
+* {
+  letter-spacing: 1px;
+  outline: unset;
+}
 .inner {
   width: 1300px;
 }
 
+.sub_container .inner > p {
+  font-family: "NEXON Lv2 Gothic";
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 500;
+  letter-spacing: -.5px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.sub_container .inner .title {
+  font-family: "NEXON Lv2 Gothic";
+  font-size: 36px;
+  letter-spacing: -.5px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 35px;
+}
+.sub_container hr {
+  display: block;
+  margin: 0 auto;
+  width: 66px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #008574;
+  margin-bottom: 57px;
+}
 
-.sub_container .inner > p {font-family: "NEXON Lv2 Gothic"; font-size: 24px; line-height: 40px; font-weight: 500; letter-spacing: -1px; text-align: center; margin-bottom:25px;}
-.sub_container .inner .title {font-family: "NEXON Lv2 Gothic"; font-size: 36px; letter-spacing: -2px; font-weight: 500; text-align: center; margin-top: 120px; margin-bottom: 35px;}
-.sub_container hr {display: block; margin: 0 auto; width: 66px; border-width: 1px; border-style: solid; border-color: #008574; margin-bottom: 57px;}
-
-.inner {}
-.inner > ul::after {content:''; display:block; visibility:hidden; clear:both;}
-.inner > ul li {float:left; width:46%; margin-right:8%; overflow:hidden; position:relative;}
-.inner > ul li:last-of-type {margin-right:0;}
-.inner > ul li .slide {}
-.inner > ul li .slide .bx-prev {text-indent:-9999px; width:15px; height:32px; background:url('../img/prev.png')no-repeat center; background-size:contain; position:absolute; bottom:130px; left:45px;}
-.inner > ul li .slide .bx-next {text-indent:-9999px; width:15px; height:32px; background:url('../img/next.png')no-repeat center; background-size:contain; position:absolute; bottom:130px; left:110px;}
-.inner > ul li a.green_btn {margin-top:-2px;}
-.inner > ul {margin-bottom:125px;}
-.inner > ul li:last-of-type > div {box-sizing:border-box; padding:37px 60px;}
-.inner > ul li div dl {margin-bottom:10px;}
-.inner > ul li div dl:last-of-type {margin-bottom:0;}
-.inner > ul li div dl::after {content:''; display:block; visibility:hidden; clear:both;}
-.inner > ul li div dl dt {float:left; margin-right:2%; width:25%; line-height:50px; font-size:18px; text-align:left; font-weight:bold; color:#222; font-family: "NEXON Lv2 Gothic";}
-.inner > ul li div dl dd {float:left; width:73%; font-family: "NEXON Lv2 Gothic";}
-.inner > ul li div dl dd input[type="text"] {border:1px solid #dcdcdc; box-sizing:border-box; padding:0 5px; font-size:18px; color:#979797; font-family: "NEXON Lv2 Gothic"; height:50px;}
-.inner > ul li div dl dd select {border:1px solid #dcdcdc; box-sizing:border-box; padding:0 5px; font-size:18px; color:#979797; font-family: "NEXON Lv2 Gothic"; height:50px;}
-.inner > ul li .first {border-top:1px solid #008574; border-bottom:1px solid #dcdcdc;}
-.inner > ul li .first dl:first-of-type dd input[type="text"] {width:349px;}
+.inner {
+}
+.inner > ul::after {
+  content: '';
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.inner > ul li {
+  float: left;
+  width: 46%;
+  margin-right: 8%;
+  overflow: hidden;
+  position: relative;
+}
+.inner > ul li:last-of-type {
+  margin-right: 0;
+}
+.inner > ul li .slide {
+}
+.inner > ul li .slide .bx-prev {
+  text-indent: -9999px;
+  width: 15px;
+  height: 32px;
+  background: url('../img/prev.png')no-repeat center;
+  background-size: contain;
+  position: absolute;
+  bottom: 130px;
+  left: 45px;
+}
+.inner > ul li .slide .bx-next {
+  text-indent: -9999px;
+  width: 15px;
+  height: 32px;
+  background: url('../img/next.png')no-repeat center;
+  background-size: contain;
+  position: absolute;
+  bottom: 130px;
+  left: 110px;
+}
+.inner > ul li a.green_btn {
+  margin-top: -2px;
+}
+.inner > ul {
+  margin-bottom: 125px;
+}
+.inner > ul li:last-of-type > div {
+  box-sizing: border-box;
+  padding: 37px 60px;
+}
+.inner > ul li div dl {
+  margin-bottom: 10px;
+}
+.inner > ul li div dl:last-of-type {
+  margin-bottom: 0;
+}
+.inner > ul li div dl::after {
+  content: '';
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.inner > ul li div dl dt {
+  float: left;
+  margin-right: 2%;
+  width: 25%;
+  line-height: 50px;
+  font-size: 18px;
+  text-align: left;
+  font-weight: bold;
+  color: #222;
+  font-family: "NEXON Lv2 Gothic";
+  letter-spacing: -.5px;
+}
+.inner > ul li div dl dd {
+  float: left;
+  width: 73%;
+  font-family: "NEXON Lv2 Gothic";
+  letter-spacing: -.5px;
+}
+.inner > ul li div dl dd input[type="text"] {
+  border: 1px solid #dcdcdc;
+  box-sizing: border-box;
+  padding: 0 5px;
+  font-size: 18px;
+  color: #979797;
+  font-family: "NEXON Lv2 Gothic";
+  letter-spacing: -.5px;
+  height: 50px;
+}
+.inner > ul li div dl dd select {
+  border: 1px solid #dcdcdc;
+  box-sizing: border-box;
+  padding: 0 5px;
+  font-size: 18px;
+  color: #979797;
+  font-family: "NEXON Lv2 Gothic";
+  letter-spacing: -.5px;
+  height: 50px;
+}
+.inner > ul li .first {
+  border-top: 1px solid #008574;
+  border-bottom: 1px solid #dcdcdc;
+}
+.inner > ul li .first dl:first-of-type dd input[type="text"] {
+  width: 349px;
+}
 .inner > ul li .first dl:nth-of-type(2) dd input[type="text"],
-.inner > ul li .first dl:nth-of-type(2) dd select {width:100px;}
-.inner > ul li .first dl:nth-of-type(3) select#sido {float:left; width:180px; margin-right:10px; width: 158px;}
-.inner > ul li .first dl:nth-of-type(3) select#gugun {float:left; width: 180px;}
-.inner > ul li .first p {font-family: "NEXON Lv2 Gothic"; font-size:14px; color:#008574; line-height:1.4em; margin-top:20px;font-weight:600; box-sizing:border-box; padding-left:27%;}
-.inner > ul li .sec {border-bottom:1px solid #008574;}
-.inner > ul li .sec dl dt {line-height:1.4em;}
-.inner > ul li .sec dl dd p {width:370px; height:150px; overflow-y:scroll; box-sizing:border-box; padding:25px; border:1px solid #dcdcdc; font-size:14px; font-family: "NEXON Lv2 Gothic"; color:#979797; font-weight:500; line-height:1.4em; letter-spacing: 0;}
-.inner > ul li .agree {box-sizing:border-box; padding-left:27%; margin-top:20px;}
-.inner > ul li .agree input[type="checkbox"] {vertical-align:middle; margin:0;}
-.inner > ul li .agree label {font-family: "NEXON Lv2 Gothic"; font-size:14px; color:#008574; line-height:1; font-weight:600;}
-.inner > ul li .thir {padding:35px 60px 60px;}
-a.pink_btn {margin:0 auto;}
-
-
+.inner > ul li .first dl:nth-of-type(2) dd select {
+  width: 100px;
+}
+.inner > ul li .first dl:nth-of-type(3) select#sido {
+  float: left;
+  width: 180px;
+  margin-right: 10px;
+  width: 158px;
+}
+.inner > ul li .first dl:nth-of-type(3) select#gugun {
+  float: left;
+  width: 180px;
+}
+.inner > ul li .first p {
+  font-family: "NEXON Lv2 Gothic";
+  font-size: 14px;
+  color: #008574;
+  line-height: 1.4em;
+  margin-top: 20px;
+  font-weight: 600;
+  box-sizing: border-box;
+  letter-spacing: -.5px;
+  padding-left: 27%;
+}
+.inner > ul li .sec {
+  border-bottom: 1px solid #008574;
+}
+.inner > ul li .sec dl dt {
+  line-height: 1.4em;
+}
+.inner > ul li .sec dl dd p {
+  width: 370px;
+  height: 150px;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  padding: 25px;
+  border: 1px solid #dcdcdc;
+  font-size: 14px;
+  font-family: "NEXON Lv2 Gothic";
+  color: #979797;
+  font-weight: 500;
+  line-height: 1.4em;
+  letter-spacing: -.5px;
+}
+.inner > ul li .agree {
+  box-sizing: border-box;
+  padding-left: 27%;
+  margin-top: 20px;
+}
+.inner > ul li .agree input[type="checkbox"] {
+  vertical-align: middle;
+  margin: 0;
+}
+.inner > ul li .agree label {
+  font-family: "NEXON Lv2 Gothic";
+  letter-spacing: -.5px;
+  font-size: 14px;
+  color: #008574;
+  line-height: 1;
+  font-weight: 600;
+}
+.inner > ul li .thir {
+  padding: 35px 60px 60px;
+}
+a.pink_btn {
+  margin: 0 auto;
+}

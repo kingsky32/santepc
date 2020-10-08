@@ -32,7 +32,7 @@ if(!defined('_INDEX_')) { // index가 아닐때 실행
                 <li><a href="/page/sub1/sub1_01.php">브랜드 소개</a>
                     <ol>
                         <li><a href="/page/sub1/sub1_01.php">샹떼PC방</a></li>
-                        <li><a href="/page/sub1/sub1_02.php">브랜드 경쟁력</a></li>
+                        
                         <li><a href="/page/sub1/sub1_03.php">연혁</a></li>
                         <li><a href="/page/sub1/sub1_04.php">경영이념</a></li>
                         <li><a href="/page/sub1/sub1_05.php">찾아오시는 길</a></li>
@@ -64,6 +64,7 @@ if(!defined('_INDEX_')) { // index가 아닐때 실행
                         <li><a href="/page/sub4/sub4_03.php">추천점포</a></li>
                         <li><a href="/page/sub4/sub4_04.php">리모델링 신청</a></li>
                         <li><a href="/page/sub4/sub4_05.php">사업설명회 신청</a></li>
+                        <li><a href="/page/sub4/sub4_06.php">성공창업이야기</a></li>
                     </ol>
                 </li>
                 <li><a href="/page/sub5/sub5_01.php">인테리어</a>

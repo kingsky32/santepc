@@ -15,7 +15,7 @@
   <nav class="lnb">
     <ul>
       <li><a href="/page/sub1/sub1_01.php">상떼PC방</a></li>
-      <li><a href="/page/sub1/sub1_02.php">브랜드 경쟁력</a></li>
+      
       <li><a href="/page/sub1/sub1_03.php">연혁</a></li>
       <li><a href="/page/sub1/sub1_04.php">경영이념</a></li>
       <li class="on"><a href="/page/sub1/sub1_05.php">찾아오시는 길</a></li>
@@ -23,9 +23,26 @@
   </nav>
   <div class="inner">
     <h3 class="title">Location</h3>
-    <div class="map">
-      <img src="<?php echo G5_IMG_URL ?>/sub/sub1/sub1_05_map.png" alt="map">
-    </div>
+
+    <!-- 1. 지도 노드 -->
+    <div id="daumRoughmapContainer1602144282405" class="root_daum_roughmap root_daum_roughmap_landing map"></div>
+
+    <!--
+      2. 설치 스크립트
+      * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+    -->
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+    <!-- 3. 실행 스크립트 -->
+    <script charset="UTF-8">
+      new daum.roughmap.Lander({
+        "timestamp" : "1602144282405",
+        "key" : "22dgd",
+        "mapWidth" : "1300",
+        "mapHeight" : "350"
+      }).render();
+    </script>
+
     <div class="inner">
       <h5 class="addr">강남구 봉은사로 317 아모제논현빌딩 8층 (논현동 277-35)</h5>
       <section class="tel">
@@ -62,6 +79,7 @@
     </div>
   </div>
 </div>
+
 
 <!-- 여기 아래부터 모든 HTML 요소 구성 끝 -->
 <?php

@@ -5,6 +5,7 @@
   include_once(G5_PATH.'/head.php');
 ?>
 
+<script src="<?php echo G5_JS_URL ?>/jquery.bxslider.min.js"></script>
 <link rel="stylesheet" href="./css/sub4_02.css">
 
 <!-- 여기 아래부터 모든 HTML 요소 구성 시작 -->

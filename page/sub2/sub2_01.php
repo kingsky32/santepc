@@ -24,11 +24,11 @@
       <li><a href="#page6">전문 PC관리 시스템</a></li>
     </ul>
   </nav>
-  <div class="inner">
+  <div class="inner" id="page1">
     <h3 class="title">PC방은 보통 타업종들과의 상권분석이 다릅니다.</h3>
     <hr>
   </div>
-  <section class="section-01" id="page1">
+  <section class="section-01">
     <div class="inner">
       <article>
         <div class="icon">
@@ -76,8 +76,8 @@
       <a href="">PC방 전문 상권분석 신청하기</a>
     </div>
   </section>
-  <section class="section-03" id="page2">
-    <h3 class="title">PC방 운영 21년, 샹떼PC방은 먹거리 Shop in Shop 시스템을<br>제일 먼저 도입하였습니다.</h3>
+  <section class="section-03">
+    <h3 class="title" id="page2">PC방 운영 21년, 샹떼PC방은 먹거리 Shop in Shop 시스템을<br>제일 먼저 도입하였습니다.</h3>
     <hr>
     <section>
       <article style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_02.png')">
@@ -98,9 +98,9 @@
       </article>
     </section>
   </section>
-  <h3 class="title">먹거리매출도 샹떼PC방이 No.1 입니다.</h3>
+  <h3 class="title" id="page3">먹거리매출도 샹떼PC방이 No.1 입니다.</h3>
   <hr>
-  <section class="section-04" id="page3">
+  <section class="section-04">
     <div class="inner">
       <article class="text">
         <p class="detail-1">언제까지 PC방에서 게임만 할래?<br>
@@ -119,8 +119,8 @@
       </article>
     </div>
   </section>
-  <section class="section-05" id="page4">
-    <h3 class="title">특화된 전용책상 샹떼PC방의 ‘슬라이딩 트윈 데스크’</h3>
+  <section class="section-05">
+    <h3 class="title" id="page4">특화된 전용책상 샹떼PC방의 ‘드딩 트윈 데스크’</h3>
     <hr>
     <div class="inner">
       <article>
@@ -171,9 +171,9 @@
       </article>
     </div>
   </section>
-  <section class="section-06" id="page5">
+  <section class="section-06">
     <div class="inner">
-      <h5 class="title">전 직원이 참여하는 샹떼PC방의 가맹관리시스템</h5>
+      <h5 class="title" id="page5">전 직원이 참여하는 샹떼PC방의 가맹관리시스템</h5>
       <hr>
       <section>
         <article>
@@ -256,9 +256,9 @@
 
     </div>
   </section>
-  <section class="section-08" id="page6"
+  <section class="section-08"
     style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_bg_01.png')">
-    <h5 class="title">신속한 대응, 샹떼PC방의 전문PC관리 시스템</h5>
+    <h5 class="title" id="page6">신속한 대응, 샹떼PC방의 전문PC관리 시스템</h5>
     <hr>
     <div class="inner">
       <article>
@@ -306,14 +306,14 @@
   $('#gnb li:nth-child(2) a').on('click', function (e) {
     e.preventDefault();
     $('html, body').animate({
-      'scrollTop': $($(this).attr('href').slice(-6)).offset().top
+      'scrollTop': $($(this).attr('href').slice(-6)).offset().top - 100
     }, 500);
   });
 
   $('.lnb li a').on('click', function (e) {
     e.preventDefault();
     $('html, body').animate({
-      'scrollTop': $($(this).attr('href')).offset().top
+      'scrollTop': $($(this).attr('href')).offset().top - 100
     }, 500);
   });
 

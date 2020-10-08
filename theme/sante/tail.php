@@ -16,6 +16,29 @@ if (G5_IS_MOBILE) {
 if(!defined('_INDEX_')) { // index가 아닐때 실행
 ?>
 
+<script>
+    $(window).on('scroll', function () {
+        if ($('html, body').scrollTop() >= 300) {
+            $('.sub_container').css({
+                'padding-top': 80
+            });
+            $('.sub_container .lnb').css({
+                'position': 'fixed',
+                'top': 80,
+                'z-index': 25
+            });
+        } else {
+            $('.sub_container .lnb').css({
+                'position': 'static',
+                'top': 'auto'
+            });
+            $('.sub_container').css({
+                'padding-top': 0
+            });
+        }
+    });
+</script>
+
 <!-- 하단 시작 { -->
 <footer id="footer">
     <div class="inner">

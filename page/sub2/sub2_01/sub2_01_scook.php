@@ -6,7 +6,196 @@
 ?>
 <!-- 여기 아래부터 모든 HTML 요소 구성 시작 -->
 
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 <link rel="stylesheet" href="../css/sub2_01_scook.css">
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<div id="popup1" class="popup">
+  <div class="popup-container">
+    <div class="slider">
+      <div class="slide">
+        <div class="slide-container">
+          <img class="logo" src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_scook.png" alt="logo">
+          <div class="text">
+            <span class="kind">면류</span>
+            <span class="bio">매콤한 비빔냉면과 바삭한 돈가스의 조합!</span>
+            <h5>비빔냉면<br>돈가스</h5>
+          </div>
+          <img class="food" src="./img/비빔냉면돈가스.png" alt="비빔냉면돈가스">
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-container">
+          <img class="logo" src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_scook.png" alt="logo">
+          <div class="text">
+            <span class="kind">면류</span>
+            <span class="bio">매콤한 비빔냉면과 바삭한 돈가스의 조합!</span>
+            <h5>비빔냉면<br>돈가스</h5>
+          </div>
+          <img class="food" src="./img/비빔냉면돈가스.png" alt="비빔냉면돈가스">
+        </div>
+      </div>
+    </div>
+    <div class="popup-navigation">
+      <div class="popup-prev" onclick="onPopupNavigation('#popup5')">
+        '음료' 메뉴보기
+      </div>
+      <div class="popup-next" onclick="onPopupNavigation('#popup2')">
+        '밥류' 메뉴보기
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup2" class="popup">
+  <div class="popup-container">
+    <div class="slider">
+      <div class="slide">
+        <div class="slide-container">
+          <img class="logo" src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_scook.png" alt="logo">
+          <div class="text">
+            <span class="kind">밥류</span>
+            <span class="bio">매콤한 비빔냉면과 바삭한 돈가스의 조합!</span>
+            <h5>비빔냉면<br>돈가스</h5>
+          </div>
+          <img class="food" src="./img/비빔냉면돈가스.png" alt="비빔냉면돈가스">
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-container">
+          <img class="logo" src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_scook.png" alt="logo">
+          <div class="text">
+            <span class="kind">밥류</span>
+            <span class="bio">매콤한 비빔냉면과 바삭한 돈가스의 조합!</span>
+            <h5>비빔냉면<br>돈가스</h5>
+          </div>
+          <img class="food" src="./img/비빔냉면돈가스.png" alt="비빔냉면돈가스">
+        </div>
+      </div>
+    </div>
+    <div class="popup-navigation">
+      <div class="popup-prev" onclick="onPopupNavigation('#popup1')">
+        '면류' 메뉴보기
+      </div>
+      <div class="popup-next" onclick="onPopupNavigation('#popup3')">
+        '튀김류' 메뉴보기
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup3" class="popup">
+  <div class="popup-container">
+    <div class="slider">
+      <div class="slide">
+        <div class="slide-container">
+          <img class="logo" src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_scook.png" alt="logo">
+          <div class="text">
+            <span class="kind">튀김류</span>
+            <span class="bio">매콤한 비빔냉면과 바삭한 돈가스의 조합!</span>
+            <h5>비빔냉면<br>돈가스</h5>
+          </div>
+          <img class="food" src="./img/비빔냉면돈가스.png" alt="비빔냉면돈가스">
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-container">
+          <img class="logo" src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_scook.png" alt="logo">
+          <div class="text">
+            <span class="kind">튀김류</span>
+            <span class="bio">매콤한 비빔냉면과 바삭한 돈가스의 조합!</span>
+            <h5>비빔냉면<br>돈가스</h5>
+          </div>
+          <img class="food" src="./img/비빔냉면돈가스.png" alt="비빔냉면돈가스">
+        </div>
+      </div>
+    </div>
+    <div class="popup-navigation">
+      <div class="popup-prev" onclick="onPopupNavigation('#popup2')">
+        '빕류' 메뉴보기
+      </div>
+      <div class="popup-next" onclick="onPopupNavigation('#popup4')">
+        '스낵류' 메뉴보기
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup4" class="popup">
+  <div class="popup-container">
+    <div class="slider">
+      <div class="slide">
+        <div class="slide-container">
+          <img class="logo" src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_scook.png" alt="logo">
+          <div class="text">
+            <span class="kind">스낵류</span>
+            <span class="bio">매콤한 비빔냉면과 바삭한 돈가스의 조합!</span>
+            <h5>비빔냉면<br>돈가스</h5>
+          </div>
+          <img class="food" src="./img/비빔냉면돈가스.png" alt="비빔냉면돈가스">
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-container">
+          <img class="logo" src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_scook.png" alt="logo">
+          <div class="text">
+            <span class="kind">스낵류</span>
+            <span class="bio">매콤한 비빔냉면과 바삭한 돈가스의 조합!</span>
+            <h5>비빔냉면<br>돈가스</h5>
+          </div>
+          <img class="food" src="./img/비빔냉면돈가스.png" alt="비빔냉면돈가스">
+        </div>
+      </div>
+    </div>
+    <div class="popup-navigation">
+      <div class="popup-prev" onclick="onPopupNavigation('#popup3')">
+        '튀김류' 메뉴보기
+      </div>
+      <div class="popup-next" onclick="onPopupNavigation('#popup5')">
+        '음료' 메뉴보기
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup5" class="popup">
+  <div class="popup-container">
+    <div class="slider">
+      <div class="slide">
+        <div class="slide-container">
+          <img class="logo" src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_scook.png" alt="logo">
+          <div class="text">
+            <span class="kind">음료</span>
+            <span class="bio">매콤한 비빔냉면과 바삭한 돈가스의 조합!</span>
+            <h5>비빔냉면<br>돈가스</h5>
+          </div>
+          <img class="food" src="./img/비빔냉면돈가스.png" alt="비빔냉면돈가스">
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-container">
+          <img class="logo" src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_scook.png" alt="logo">
+          <div class="text">
+            <span class="kind">음료</span>
+            <span class="bio">매콤한 비빔냉면과 바삭한 돈가스의 조합!</span>
+            <h5>비빔냉면<br>돈가스</h5>
+          </div>
+          <img class="food" src="./img/비빔냉면돈가스.png" alt="비빔냉면돈가스">
+        </div>
+      </div>
+    </div>
+    <div class="popup-navigation">
+    <div class="popup-prev" onclick="onPopupNavigation('#popup4')">
+        '스낵류' 메뉴보기
+      </div>
+      <div class="popup-next" onclick="onPopupNavigation('#popup1')">
+        '면류' 메뉴보기
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <div class="sub_container">
   <div class="main-vis" style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub_bg.png');">
@@ -107,7 +296,7 @@
           <div class="text">
             <span>PC방 대표 인기매뉴</span>
             <h5>면류</h5>
-            <a href="">메뉴 보기</a>
+            <button onclick="openPopup('#popup1')">메뉴 보기</button>
           </div>
         </div>
       </article>
@@ -116,7 +305,7 @@
           <div class="text">
             <span>든든한 한 끼 뚝딱!</span>
             <h5>밥류</h5>
-            <a href="">메뉴 보기</a>
+            <button onclick="openPopup('#popup2')">메뉴 보기</button>
           </div>
         </div>
       </article>
@@ -125,7 +314,7 @@
           <div class="text">
             <span>빠삭하고 맛있는</span>
             <h5>튀김류</h5>
-            <a href="">메뉴 보기</a>
+            <button onclick="openPopup('#popup3')">메뉴 보기</button>
           </div>
         </div>
       </article>
@@ -134,7 +323,7 @@
           <div class="text">
             <span>간편하게 즐기는</span>
             <h5>스낵류</h5>
-            <a href="">메뉴 보기</a>
+            <button onclick="openPopup('#popup4')">메뉴 보기</button>
           </div>
         </div>
       </article>
@@ -143,13 +332,46 @@
           <div class="text">
             <span>함께 먹으면 더 맛있는</span>
             <h5>음료</h5>
-            <a href="">메뉴 보기</a>
+            <button onclick="openPopup('#popup5')">메뉴 보기</button>
           </div>
         </div>
       </article>
     </section>
   </section>
 </div>
+
+<script>
+  $('#popup1 .slider').slick();
+  $('#popup2 .slider').slick();
+  $('#popup3 .slider').slick();
+  $('#popup4 .slider').slick();
+  $('#popup5 .slider').slick();
+
+  function openPopup(e) {
+    $(e).fadeIn();
+    $('#popup1 .slider').slick('reinit');
+    $('#popup2 .slider').slick('reinit');
+    $('#popup3 .slider').slick('reinit');
+    $('#popup4 .slider').slick('reinit');
+    $('#popup5 .slider').slick('reinit');
+  }
+
+  function onPopupNavigation(e) {
+    $('.popup').hide();
+    $(e).show();
+    $('#popup1 .slider').slick('reinit');
+    $('#popup2 .slider').slick('reinit');
+    $('#popup3 .slider').slick('reinit');
+    $('#popup4 .slider').slick('reinit');
+    $('#popup5 .slider').slick('reinit');
+  }
+
+  $('body').on('click', function (e) {
+    if (e.target.classList.contains('popup')) {
+      $('.popup').fadeOut();
+    };
+  });
+</script>
 
 <!-- 여기 아래부터 모든 HTML 요소 구성 끝 -->
 <?php

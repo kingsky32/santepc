@@ -19,9 +19,6 @@
       <li><a href="/page/sub3/sub3_05.php">정보공개서 신청</a></li>
     </ul>
   </nav>
-  <div class="inner">
-
-  </div>
 </div>
 
 <!-- 여기 아래부터 모든 HTML 요소 구성 끝 -->

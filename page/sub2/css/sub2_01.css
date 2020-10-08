@@ -7,6 +7,7 @@
   font-weight: 500;
   text-align: center;
   padding-top: 120px;
+  letter-spacing: -.5px;
   margin-bottom: 35px;
   color: #282828;
 }
@@ -50,6 +51,7 @@
   font-size: 22px;
   line-height: 32px;
   color: #ffffff;
+  letter-spacing: -.5px;
   font-weight: 500;
 }
 
@@ -62,6 +64,7 @@
 .sub_container .section-02 p {
   font-family: "NEXON Lv2 Gothic";
   font-size: 24px;
+  letter-spacing: -.5px;
   line-height: 40px;
   color: #c0c9c9;
   font-weight: 300;
@@ -103,6 +106,7 @@
 
 .sub_container .section-02 a {
   font-family: "NEXON Lv2 Gothic";
+  letter-spacing: -.5px;
   font-size: 22px;
   color: #ffffff;
   padding: 18px 35px;
@@ -145,6 +149,7 @@
 
 .sub_container .section-03 section article a {
   font-family: "NEXON Lv2 Gothic";
+  letter-spacing: -.5px;
   font-size: 22px;
   color: #ffffff;
   padding: 18px 35px;
@@ -180,6 +185,7 @@
 
 .sub_container .section-03 section article p {
   font-family: "NEXON Lv2 Gothic";
+  letter-spacing: -.5px;
   font-size: 22px;
   line-height: 32px;
   font-weight: 500;
@@ -245,6 +251,7 @@
 
 .sub_container .section-04 .text .detail-3 {
   font-family: "NEXON Lv2 Gothic";
+  letter-spacing: -.5px;
   font-weight: 500;
   color: #282828;
   font-size: 20p;
@@ -261,6 +268,7 @@
 
 .sub_container .section-04 .img a {
   font-family: "NEXON Lv2 Gothic";
+  letter-spacing: -.5px;
   font-size: 22px;
   color: #ffffff;
   padding: 18px 35px;
@@ -362,6 +370,7 @@
 
 .section-05 article .slide .text span {
   font-family: "NEXON Lv2 Gothic";
+  letter-spacing: -.5px;
   font-size: 24px;
   font-weight: 500;
   color: #ffffff;
@@ -370,6 +379,7 @@
 
 .section-05 article .slide .text p {
   font-family: "NEXON Lv2 Gothic";
+  letter-spacing: -.5px;
   font-size: 18px;
   font-weight: 500;
   color: #ffffff;
@@ -379,7 +389,7 @@
 .section-05 article > p {
   font-family: "GmarketSans";
   font-weight: 500;
-  font-size: 36px;
+  font-size: 34px;
   line-height: 44px;
   color: #ffffff;
 }
@@ -426,6 +436,7 @@
 
 .section-06 section article .tag {
   font-family: "NEXON Lv2 Gothic";
+  letter-spacing: -.5px;
   font-weight: 600;
   font-size: 24px;
   color: #ffffff;
@@ -469,6 +480,7 @@
 
 .section-06 section article .text ul li {
   font-family: "NEXON Lv2 Gothic";
+  letter-spacing: -.5px;
   font-weight: 600;
   line-height: 40px;
   color: #282828;
@@ -524,6 +536,7 @@
 
 .section-07 .steps .step span {
   font-family: "NEXON Lv2 Gothic";
+  letter-spacing: -.5px;
   font-size: 12px;
   font-weight: 600;
   color: #008574;
@@ -533,6 +546,7 @@
 
 .section-07 .steps .step p {
   font-family: "NEXON Lv2 Gothic";
+  letter-spacing: -.5px;
   font-weight: 500;
   line-height: 24px;
   font-size: 18px;
@@ -580,6 +594,7 @@
 
 .section-08 .inner article p {
   font-family: "NEXON Lv2 Gothic";
+  letter-spacing: -.5px;
   color: #ffffff;
   font-size: 24px;
   line-height: 34px;
@@ -599,6 +614,7 @@
 
 .section-08 .inner article ul li {
   font-family: "NEXON Lv2 Gothic";
+  letter-spacing: -.5px;
   font-size: 18px;
   line-height: 30px;
   color: #ffffff;
@@ -617,6 +633,7 @@
 
 .section-09 a {
   font-family: "NEXON Lv2 Gothic";
+  letter-spacing: -.5px;
   font-weight: 600;
   width: 340px;
   height: 60px;

@@ -15,7 +15,7 @@
   <nav class="lnb">
     <ul>
       <li class="on"><a href="/page/sub1/sub1_01.php">상떼PC방</a></li>
-      <li><a href="/page/sub1/sub1_02.php">브랜드 경쟁력</a></li>
+      
       <li><a href="/page/sub1/sub1_03.php">연혁</a></li>
       <li><a href="/page/sub1/sub1_04.php">경영이념</a></li>
       <li><a href="/page/sub1/sub1_05.php">찾아오시는 길</a></li>

@@ -30,6 +30,7 @@
   color: #282828;
   font-weight: 500;
   text-align: center;
+  letter-spacing: -.5px;
   margin-bottom: 25px;
 }
 
@@ -44,6 +45,7 @@
   color: #282828;
   font-family: "NEXON Lv2 Gothic";
   font-weight: 400;
+  letter-spacing: -.5px;
   margin-bottom: 45px;
 }
 
@@ -78,7 +80,7 @@
   display: block;
   font-family: "NEXON Lv2 Gothic";
   font-size: 15px;
-  letter-spacing: 2px;
+  letter-spacing: -.5px;
   text-align: center;
   font-weight: 600;
   color: #aaaaaa;
@@ -92,7 +94,7 @@
   font-family: "NEXON Lv2 Gothic";
   font-size: 18px;
   font-weight: 600;
-  letter-spacing: -1px;
+  letter-spacing: -.5px;
   color: #282828;
   margin-bottom: 15px;
 }

@@ -1,3 +1,160 @@
+.popup {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 500000;
+  display: none;
+}
+
+.popup.active {
+  display: block;
+}
+
+.popup .popup-container {
+  width: 900px;
+  height: 625px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.popup .popup-container .slider {
+  width: 100%;
+  height: 550px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.popup .popup-container .slider .slick-arrow {
+  border: 1px solid #313131;
+  width: 53px;
+  height: 53px;
+  background-color: transparent;
+  padding: 0;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  z-index: 50;
+  bottom: 65px;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+}
+
+.popup .popup-container .slider .slick-arrow.slick-prev {
+  background-image: url('/img/angle-left.png');
+  left: 60px;
+}
+
+.popup .popup-container .slider .slick-arrow.slick-next {
+  background-image: url('/img/angle-right.png');
+  left: 112px;
+}
+
+.popup .popup-container .slider .slide {
+  width: 100%;
+  height: 550px;
+  outline: none;
+}
+
+.popup .popup-container .slider .slide .slide-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 65px 60px;
+  box-sizing: border-box;
+}
+
+.popup .popup-container .slider .slide .slide-container .logo {
+  position: absolute;
+  top: 55px;
+  right: 50px;
+  z-index: 5;
+  width: 136px;
+}
+
+.popup .popup-container .slider .slide .slide-container .text {
+  position: relative;
+  z-index: 5;
+}
+
+.popup .popup-container .slider .slide .slide-container .text span.kind {
+  display: flex;
+  width: 80px;
+  height: 34px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 34px;
+  background-color: #ff4f12;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "NEXON Lv2 Gothic";
+  letter-spacing: -.5px;
+  margin-bottom: 24px;
+}
+
+.popup .popup-container .slider .slide .slide-container .text span.bio {
+  font-family: "NEXON Lv2 Gothic";
+  font-size: 20px;
+  color: #282828;
+  font-weight: 400;
+  letter-spacing: -.5px;
+  display: block;
+  margin-bottom: 21px;
+}
+
+.popup .popup-container .slider .slide .slide-container .text h5 {
+  font-size: 60px;
+  color: #282828;
+  font-weight: 500;
+  font-family: "GmarketSans";
+}
+
+.popup .popup-container .slider .slide .slide-container .food {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+.popup .popup-container .popup-navigation {
+  display: flex;
+}
+
+.popup .popup-container .popup-navigation > div {
+  font-family: "NEXON Lv2 Gothic";
+  flex: 1;
+  height: 75px;
+  display: flex;
+  letter-spacing: -.5px;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 20px;
+  background-repeat: no-repeat;
+  background-color: #008574;
+  cursor: pointer;
+}
+
+.popup .popup-container .popup-navigation > div.popup-prev {
+  background-image: url("/img/sub/sub2/sub2_01_arrow-left.png");
+  background-position: 25px center;
+  border-right: 1px solid #262912;
+}
+
+.popup .popup-container .popup-navigation > div.popup-next {
+  background-image: url("/img/sub/sub2/sub2_01_arrow-right.png");
+  background-position: calc(100% - 25px) center;
+}
+
 .section-01 {
   padding-top: 126px;
   background-color: #f5efe9;
@@ -30,6 +187,7 @@
   font-size: 20px;
   color: #282828;
   font-weight: 500;
+  letter-spacing: -.5px;
   text-align: center;
   line-height: 32px;
   margin-bottom: 53px;
@@ -82,7 +240,7 @@
   font-family: "NEXON Lv2 Gothic";
   font-size: 20px;
   line-height: 30px;
-  letter-spacing: -2px;
+  letter-spacing: -.5px;
   color: #282828;
   font-weight: 500;
   text-align: center;
@@ -180,6 +338,7 @@
   font-size: 18px;
   padding: 7px 20px;
   position: relative;
+  letter-spacing: -.5px;
   background-color: #ff756e;
   border-radius: 15px;
   width: 220px;
@@ -216,6 +375,7 @@
   font-family: "NEXON Lv2 Gothic";
   font-size: 40px;
   color: #282828;
+  letter-spacing: -.5px;
   font-weight: 500;
   margin-top: 25px;
 }
@@ -228,6 +388,7 @@
   text-align: center;
   padding-top: 190px;
   margin-bottom: 35px;
+  letter-spacing: -.5px;
   color: #282828;
 }
 
@@ -277,10 +438,10 @@
 
 .section-04 section article:nth-child(1) .text span,
 .section-04 section article:nth-child(1) .text h5,
-.section-04 section article:nth-child(1) .text a,
+.section-04 section article:nth-child(1) .text button,
 .section-04 section article:nth-child(3) .text h5,
 .section-04 section article:nth-child(3) .text span,
-.section-04 section article:nth-child(3) .text a {
+.section-04 section article:nth-child(3) .text button {
   color: #ffffff;
   border-color: #ffffff;
 }
@@ -303,6 +464,7 @@
   font-size: 24px;
   color: #313131;
   font-weight: 500;
+  letter-spacing: -.5px;
   margin-bottom: 20px;
   display: block;
 }
@@ -315,11 +477,14 @@
   margin-bottom: 30px;
 }
 
-.section-04 section article .text a {
+.section-04 section article .text button {
   font-family: "GmarketSans";
   font-size: 18px;
   padding: 17px 44px;
   color: #313131;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
   border: 1px solid #313131;
   display: inline-block;
 }
