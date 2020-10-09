@@ -177,10 +177,130 @@ header #submenu ul li a {
 
 #section-01 {
   width: 100%;
+  height: 920px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
 
-#section-01 img {
-  width: 100%;
+#section-01 .section-01-container {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  position: absolute;
+  width: 75%;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  margin: auto;
+}
+
+#section-01 .big-text {
+  font-size: 400px;
+  font-family: "GmarketSans";
+  font-weight: 500;
+  color: #016b5d;
+  opacity: 0;
+  transform: translateX(-25px);
+  transition: .5s all ease;
+}
+
+#section-01.active .big-text {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+#section-01 .text {
+  flex: 1;
+}
+
+#section-01 .text .text-row {
+  display: flex;
+  align-items: flex-end;
+}
+
+#section-01 .text .text-row b {
+  font-family: "GmarketSans";
+  font-weight: 500;
+  font-size: 120px;
+  color: #1c5453;
+  margin-right: 25px;
+  word-break: keep-all;
+}
+
+#section-01 .text .text-row b.green {
+  color: #008574;
+}
+
+#section-01 .text hr {
+  border-width: 18px;
+  border-color: #1c5453;
+  margin: 15px 0 25px;
+  border-style: solid;
+  width: 100vw;
+  transition: .5s all ease;
+  transition-delay: .25s;
+  opacity: 0;
+  transform: translateX(-25px);
+}
+
+#section-01.active .text hr {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#section-01 .text .text-row {
+  opacity: 0;
+  transition: .5s all ease;
+}
+
+#section-01.active .text .text-row {
+  transform: translateY(0) !important;
+  opacity: 1;
+}
+
+#section-01 .text .text-row:nth-of-type(1) {
+  font-family: "NEXON Lv2 Gothic";
+  font-weight: 600;
+  font-size: 42px;
+  display: flex;
+  align-items: baseline;
+  color: #1c5453;
+  word-break: keep-all;
+  white-space: pre;
+  transform: translateY(-25px);
+  transition-delay: .5s;
+}
+
+#section-01 .text .text-row:nth-of-type(2) {
+  transition-delay: .75s;
+  transform: translateY(25px);
+}
+
+#section-01 .text .text-row span.red {
+  color: #ff756e;
+  margin-left: 10px;
+}
+
+#section-01 .text .since {
+  font-size: 48px;
+  font-family: "GmarketSans";
+  font-weight: 500;
+  color: #ff756e;
+  position: relative;
+  top: 10px;
+  transform: translateY(25px);
+  opacity: 0;
+  transition: .5s all ease;
+  transition-delay: 1s;
+}
+
+#section-01.active .text .since {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 #section-02 {
@@ -192,6 +312,26 @@ header #submenu ul li a {
 #section-02 article {
   width: 35%;
   max-width: 540px;
+  opacity: 0;
+  transform: translateY(25px);
+}
+
+#section-02.active article {
+  opacity: 1;
+  transform: translateY(0);
+  transition: .5s all ease;
+}
+
+#section-02 article:nth-child(1) {
+  transition-delay: .25s;
+}
+
+#section-02 article:nth-child(2) {
+  transition-delay: .5s;
+}
+
+#section-02 article:nth-child(3) {
+  transition-delay: .75s;
 }
 
 #section-02 article:last-child {
@@ -287,7 +427,17 @@ header #submenu ul li a {
 }
 
 #section-02 article:nth-child(3) > p img {
+  animation: section-02-animation 1s ease 1.5s infinite alternate;
   margin-left: 5px;
+}
+
+@keyframes section-02-animation {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
 }
 
 #section-02 article:nth-child(3) .section-02-banner img {
@@ -321,7 +471,7 @@ header #submenu ul li a {
 
 #section-03 .main-container {
   flex: 1;
-  transition: .5s transform ease;
+  transition: .5s opacity ease;
 }
 
 #section-03 > span {
@@ -410,16 +560,19 @@ header #submenu ul li a {
   width: 100%;
 }
 
+#section-03 .container .main:first-child {
+  display: block;
+}
+
 #section-03 .container .main {
   border: 10px solid #1c5453;
+  width: 720px;
   box-sizing: border-box;
   padding: 82px 72px;
   flex: 1;
-  position: relative;
-}
-
-#section-03 .container .main:not(:last-child) {
-  margin-bottom: 390px;
+  position: absolute;
+  display: none;
+  background-color: #f2ebe2;
 }
 
 #section-03 .container .main p {
@@ -506,7 +659,8 @@ header #submenu ul li a {
   flex: 1;
   position: relative;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 150%;
+  transition: .5s background-size ease;
   background-position: center center;
 }
 
@@ -534,7 +688,7 @@ header #submenu ul li a {
   opacity: 0.6;
 }
 
-#section-04 article a {
+#section-04 article > div {
   display: block;
   padding: 222px 0 0 55px;
   width: 100%;
@@ -544,7 +698,7 @@ header #submenu ul li a {
   box-sizing: border-box;
 }
 
-#section-04 article a .text {
+#section-04 article > div .text {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -552,11 +706,11 @@ header #submenu ul li a {
   margin-bottom: 80px;
 }
 
-#section-04 article a .text > *:first-child {
+#section-04 article > div .text > *:first-child {
   margin-bottom: 15px;
 }
 
-#section-04 article a .text p {
+#section-04 article > div .text p {
   font-family: "GmarketSans";
   font-weight: 500;
   letter-spacing: -2px;
@@ -565,15 +719,15 @@ header #submenu ul li a {
   color: #ffffff;
 }
 
-#section-04 article a .text p span.beige {
+#section-04 article > div .text p span.beige {
   color: #fddca5;
 }
 
-#section-04 article a .text p br {
+#section-04 article > div .text p br {
   font-size: 0;
 }
 
-#section-04 article a .text > span {
+#section-04 article > div .text > span {
   display: block;
   font-family: "NEXON Lv2 Gothic";
   font-weight: 500;
@@ -583,21 +737,25 @@ header #submenu ul li a {
   line-height: 42px;
 }
 
-#section-04 article a:hover .more {
+#section-04 article:hover {
+  background-size: auto 170%;
+}
+
+#section-04 article:hover .more {
   opacity: 1;
 }
 
-#section-04 article a .more {
+#section-04 article > div .more {
   opacity: 0;
   transition: .3s opacity ease;
 }
 
-#section-04 article a .more img {
+#section-04 article > div .more img {
   width: 46px;
   height: 46px;
 }
 
-#section-04 article a .more span {
+#section-04 article > div .more span {
   display: block;
   font-family: "NEXON Lv2 Gothic";
   font-weight: 500;

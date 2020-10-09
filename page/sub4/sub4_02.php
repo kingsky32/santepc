@@ -1,5 +1,14 @@
 <?php
   include_once('../../common.php');
+  include_once(G5_CAPTCHA_PATH.'/captcha.lib.php');
+
+  $captcha_html = '';
+  $captcha_js   = '';
+  if ($is_guest) {
+      $captcha_html = captcha_html();
+      $captcha_js   = chk_captcha_js();
+  }
+
   $bo_table = "content";
   $g5['title'] = "성공창업 문의";
   include_once(G5_PATH.'/head.php');
@@ -38,10 +47,6 @@
             <div class="slide_wrap slide_num2"><img src="img/sub4_slide2.jpg"></div>
           </div>
           <script>
-            $(document).ready(function (e) {
-              $('.slide')({
-              });
-            });
             jQuery(function ($) {
               $('.sa-tableHeader > tbody tr:first-child').each(function () {
                 var theadTh = $(this).closest('table').find('thead th');
@@ -67,41 +72,51 @@
       </li>
       <li>
         <div class="first">
-          <dl>
-            <dt>이름</dt>
-            <dd><input type="text"></dd>
-          </dl>
-          <dl>
-            <dt>연락처</dt>
-            <dd>
-              <select name="" id="">
-                <option value="">010</option>
-                <option value="">010</option>
-                <option value="">010</option>
-              </select>-
-              <input type="text">-
-              <input type="text">
-            </dd>
-          </dl>
-          <dl>
-            <dt>희망창업지역</dt>
-            <dd>
-              <select name="" id="sido">
-                <option value="">서울특별시</option>
-                <option value="">인천광역시</option>
-                <option value="">부산광역시</option>
-              </select>
-              <select name="" id="gugun">
-                <option value="">광진구</option>
-                <option value="">남동구</option>
-                <option value="">강북구</option>
-              </select>
-            </dd>
-          </dl>
-          <p>
-            창업전문상담사의 휴대폰번호로 전화가 갑니다.<br>
-            모르는 번호로 전화가 와도 받아주시면 감사하겠습니다.
-          </p>
+          <form name="fwrite" id="fwrite" method="post">
+            <input type="hidden" name="uid" value="<?php echo get_uniqid(); ?>" id="uid">
+            <input type="hidden" name="w" value="<?php echo $w ?>" id="w">
+            <input type="hidden" name="bo_table" value="success_startup" id="bo_table">
+            <input type="hidden" name="wr_id" value="<?php echo $wr_id ?>" id="wr_id">
+            <input type="hidden" name="wr_subject" value="성공창업 문의" id="wr_subject">
+            <input type="hidden" name="wr_email" value="" id="wr_email">
+            <input type="hidden" name="wr_homepage" value="" id="wr_homepage">
+            <input type="hidden" name="wr_content" value="" id="wr_content">
+
+            <dl>
+              <dt>이름</dt>
+              <dd><input type="text" name="wr_name" value="<?php echo $name ?>" id="wr_name" required></dd>
+            </dl>
+            <dl>
+              <dt>연락처</dt>
+              <dd>
+                <select name="" id="num1">
+                  <option value="010">010</option>
+                  <option value="010">010</option>
+                  <option value="010">010</option>
+                </select>-
+                <input type="text" id="num2">-
+                <input type="text" id="num3">
+              </dd>
+            </dl>
+            <dl>
+              <dt>희망창업지역</dt>
+              <dd>
+                <select name="" id="sido">
+                  <option value="서울특별시">서울특별시</option>
+                  <option value="인천광역시">인천광역시</option>
+                  <option value="부산광역시">부산광역시</option>
+                </select>
+                <select name="" id="gugun">
+                  <option value="광진구">광진구</option>
+                  <option value="남동구">남동구</option>
+                  <option value="강북구">강북구</option>
+                </select>
+              </dd>
+            </dl>
+            <p>
+              창업전문상담사의 휴대폰번호로 전화가 갑니다.<br>
+              모르는 번호로 전화가 와도 받아주시면 감사하겠습니다.
+            </p>
         </div>
         <div class="sec">
           <dl>
@@ -126,16 +141,89 @@
         <div class="thir">
           <dl>
             <dt>자동등록방지</dt>
-            <dd></dd>
+            <dd><?php echo $captcha_html ?></dd>
           </dl>
         </div>
-        <a href="" class="pink_btn">작성완료</a>
+        <a href="" class="pink_btn btn_submit">작성완료</a>
       </li>
     </ul>
 
+
+    </form>
   </div>
 
 </div>
+
+<script>
+  $(function () {
+    $('.btn_submit').click(function (e) {
+      e.preventDefault();
+
+      if ($.trim($('#wr_name').val()) == '') {
+        alert("이름을 입력하세요.");
+        $('#wr_name').focus();
+        return false;
+      }
+
+      if ($.trim($('#num2').val()) == '') {
+        alert("연락처를 입력하세요.");
+        $('#num2').focus();
+        return false;
+      }
+
+      if ($.trim($('#num3').val()) == '') {
+        alert("연락처를 입력하세요.");
+        $('#num3').focus();
+        return false;
+      }
+
+      var uid = "uid=" + $("#uid").val();
+      var w = "w=" + $("#w").val();
+      var bo_table = "bo_table=" + $("#bo_table").val();
+      var wr_id = "wr_id=" + $("#wr_id").val();
+      var wr_subject = "wr_subject=" + $("#wr_subject").val();
+      var wr_name = "wr_name=" + $("#wr_name").val();
+      var wr_1 = "wr_1=" + $("#num1").val() + $("#num2").val() + $("#num3").val();
+      var wr_2 = "wr_2=" + $("#sido").val();
+      var wr_3 = "wr_3=" + $("#gugun").val();
+      var wr_email = "wr_email=" + $("#wr_email").val();
+      var wr_homepage = "wr_homepage=" + $("#wr_homepage").val();
+      var wr_content = "wr_content=" + $("#wr_content").val();
+
+      $.ajax({
+        url: g5_bbs_url + "/write_update.php",
+        type: "POST",
+        data: {
+          "uid": fwrite.uid.value,
+          "w": fwrite.w.value,
+          "bo_table": fwrite.bo_table.value,
+          "wr_id": fwrite.wr_id.value,
+          "wr_subject": fwrite.wr_subject.value,
+          "wr_name": fwrite.wr_name.value,
+          "wr_1": wr_1,
+          "wr_2": wr_2,
+          "wr_3": wr_3,
+          "wr_email": fwrite.wr_email.value,
+          "wr_homepage": fwrite.wr_homepage.value,
+          "wr_content": fwrite.wr_content.value
+        },
+        dataType: "text",
+        error: function (xhr, status, error) {
+          alert(error);
+        },
+        async: false,
+        cache: false,
+        success: function (data) {
+          console.log(data);
+          alert("등록완료!");
+          $("#fwrite")[0].reset();
+        }
+      });
+    });
+  });
+
+
+</script>
 
 <!-- 여기 아래부터 모든 HTML 요소 구성 끝 -->
 <?php
