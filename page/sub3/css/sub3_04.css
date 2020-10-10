@@ -209,18 +209,18 @@
   flex: 1;
 }
 
-#section-04 article:nth-child(2) form .input-area #name {
+#section-04 article:nth-child(2) form .input-area .name {
   flex: 1 1 25%;
   margin-right: 10px;
   margin-bottom: 10px;
 }
 
-#section-04 article:nth-child(2) form .input-area #place {
+#section-04 article:nth-child(2) form .input-area .place {
   flex: 1 1 25%;
   margin-bottom: 10px;
 }
 
-#section-04 article:nth-child(2) form .input-area #tel {
+#section-04 article:nth-child(2) form .input-area .tel {
   flex: 1 1 100%;
   margin-bottom: 10px;
 }
@@ -243,7 +243,7 @@
   font-weight: 500;
 }
 
-#section-04 article:nth-child(2) form button[type="submit"] {
+#section-04 article:nth-child(2) form button {
   font-family: "NEXON Lv2 Gothic";
   font-weight: 600;
   letter-spacing: -.5px;
@@ -448,7 +448,7 @@
   font-weight: 500;
 }
 
-#section-06 article:nth-child(2) form button[type="submit"] {
+#section-06 article:nth-child(2) form button {
   font-family: "NEXON Lv2 Gothic";
   font-weight: 600;
   letter-spacing: -.5px;

@@ -1,6 +1,5 @@
 <?php
   include_once('../../common.php');
-  $bo_table = "content";
   $g5['title'] = "수익성 분석";
   include_once(G5_PATH.'/head.php');
 ?>

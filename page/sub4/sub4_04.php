@@ -1,5 +1,14 @@
 <?php
   include_once('../../common.php');
+  include_once(G5_CAPTCHA_PATH.'/captcha.lib.php');
+
+  $captcha_html = '';
+  $captcha_js   = '';
+  if ($is_guest) {
+      $captcha_html = captcha_html();
+      $captcha_js   = chk_captcha_js();
+  }
+  
   $bo_table = "content";
   $g5['title'] = "리모델링 신청";
   include_once(G5_PATH.'/head.php');
@@ -27,79 +36,187 @@
     <p class="title">리모델링 신청</p>
     <hr>
     <div class="wrap">
-      <div>
-        <dl>
-          <dt>이름</dt>
-          <dd><input type="text"></dd>
-        </dl>
-        <dl>
-          <dt>이메일 주소</dt>
-          <dd><input type="text"></dd>
-        </dl>
-      </div>
-      <div>
-        <dl>
-          <dt>연락처</dt>
-          <dd>
-            <select name="" id="">
-              <option value="">010</option>
-              <option value="">010</option>
-              <option value="">010</option>
-            </select>&nbsp;-&nbsp;
-            <input type="text">&nbsp;-&nbsp;
-            <input type="text">
-          </dd>
-        </dl>
-        <dl>
-          <dt>점포평수</dt>
-          <dd><input type="text"><span>평</span></dd>
-        </dl>
-      </div>
-      <div>
-        <dl>
-          <dt>희망창업지역</dt>
-          <dd>
-            <input type="text">
-            <button>주소검색</button>
-          </dd>
-        </dl>
-        <dl>
-          <dd><input type="text"><input type="text" placeholder="상세주소"></dd>
-        </dl>
-      </div>
-      <div>
-        <dl>
-          <dt>상담희망내용</dt>
-          <dd><textarea name="" id="" cols="30" rows="10"></textarea></dd>
-        </dl>
-      </div>
-      <div>
-        <dl>
-          <dt>
-            개인정보 제공<br>및 활용 동의
-          </dt>
-          <dd>
-            <p>
-              1. 개인정보 수집범위 : 이름, 연락처<br>
-              2. 개인정보 수집 및 이용목적 : 가맹문의 및 상담자료<br>
-              3. 개인정보 수집 및 보유기간 : 이용자의 개인정보는 원칙적
-              으로 개인정보의 수집 및 이용목적이 달성되면 지체 없이 파기
-              하며, 보유기간은 최대 3년을 넘기지 않는 것을 원칙으로 한다.
-            </p>
-          </dd>
-        </dl>
-        <dl>
-          <dt>자동등록방지</dt>
-          <dd></dd>
-        </dl>
-      </div>
-      <div class="agree">
-        <input type="checkbox">
-        <label for="">위의 ‘개인정보보호취급방침’에 동의합니다.</label>
-      </div>
-      <a href="" class="pink_btn">작성완료</a>
+      <form action="" name="fwrite" id="fwrite" method="post">
+        <input type="hidden" name="uid" value="<?php echo get_uniqid(); ?>" id="uid">
+        <input type="hidden" name="w" value="<?php echo $w ?>" id="w">
+        <input type="hidden" name="bo_table" value="remodeling" id="bo_table">
+        <input type="hidden" name="wr_id" value="<?php echo $wr_id ?>" id="wr_id">
+        <input type="hidden" name="wr_subject" value="추천점포 제휴문의" id="wr_subject">
+        <input type="hidden" name="wr_homepage" value="" id="wr_homepage">
+        <div>
+          <dl>
+            <dt>이름</dt>
+            <dd><input type="text" name="wr_name" id="wr_name"></dd>
+          </dl>
+          <dl>
+            <dt>이메일 주소</dt>
+            <dd><input type="email" name="wr_email" id="wr_email"></dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>연락처</dt>
+            <dd>
+              <select name="" id="num1">
+                <option value="">010</option>
+                <option value="">010</option>
+                <option value="">010</option>
+              </select>&nbsp;-&nbsp;
+              <input type="text" id="num2" maxlength="4">&nbsp;-&nbsp;
+              <input type="text" id="num3" maxlength="4">
+            </dd>
+          </dl>
+          <dl>
+            <dt>점포평수</dt>
+            <dd><input type="text" id="wr_4" name="wr_4"><span>평</span></dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>희망창업지역</dt>
+            <dd>
+              <input type="text">
+              <button>주소검색</button>
+            </dd>
+          </dl>
+          <dl>
+            <dd><input type="text" name="wr_2" id="wr_2"><input type="text" name="wr_3" id="wr_3" placeholder="상세주소">
+            </dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>상담희망내용</dt>
+            <dd><textarea name="wr_content" id="wr_content" cols="30" rows="10"></textarea></dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>
+              개인정보 제공<br>및 활용 동의
+            </dt>
+            <dd>
+              <p>
+                1. 개인정보 수집범위 : 이름, 연락처<br>
+                2. 개인정보 수집 및 이용목적 : 가맹문의 및 상담자료<br>
+                3. 개인정보 수집 및 보유기간 : 이용자의 개인정보는 원칙적
+                으로 개인정보의 수집 및 이용목적이 달성되면 지체 없이 파기
+                하며, 보유기간은 최대 3년을 넘기지 않는 것을 원칙으로 한다.
+              </p>
+            </dd>
+          </dl>
+          <dl>
+            <dt>자동등록방지</dt>
+            <dd><?php echo $captcha_html ?></dd>
+          </dl>
+        </div>
+        <div class="agree">
+          <input type="checkbox" id="agree">
+          <label for="agree">위의 ‘개인정보보호취급방침’에 동의합니다.</label>
+        </div>
+        <a href="" class="pink_btn btn_submit">작성완료</a>
+      </form>
     </div>
   </div>
+
+
+  <script>
+    $(function () {
+      $('.btn_submit').click(function (e) {
+        e.preventDefault();
+
+        if ($.trim($('#wr_name').val()) == '') {
+          alert("이름을 입력하세요.");
+          $('#wr_name').focus();
+          return false;
+        }
+
+        if ($.trim($('#wr_email').val()) == '') {
+          alert("이메일을 입력하세요.");
+          $('#wr_email').focus();
+          return false;
+        }
+
+        if ($.trim($('#num2').val()) == '') {
+          alert("연락처를 입력하세요.");
+          $('#num2').focus();
+          return false;
+        }
+
+        if ($.trim($('#num3').val()) == '') {
+          alert("연락처를 입력하세요.");
+          $('#num3').focus();
+          return false;
+        }
+
+        if ($.trim($('#wr_2').val()) == '') {
+          alert("희망창업지역을 입력해주세요.");
+          $('#wr_2').focus();
+          return false;
+        }
+
+        if ($.trim($('#wr_content').val()) == '') {
+          alert("상담희망내용을 입력해주세요.");
+          $('#num3').focus();
+          return false;
+        }
+
+        if (!$('#agree').is(":checked")) {
+          alert("개인정보보호취급방침에 동의해주세요.");
+          $('#agree').focus();
+          return false;
+        }
+
+        var token = get_write_token(fwrite.bo_table.value);
+        if (!token) {
+          alert("토큰 정보가 올바르지 않습니다.");
+          return false;
+        }
+
+        var wr_1 = $("#num1").val() + $("#num2").val() + $("#num3").val();
+
+        $.ajax({
+          url: g5_bbs_url + "/ajax.write_update.php",
+          type: "POST",
+          data: {
+            "uid": fwrite.uid.value,
+            "w": fwrite.w.value,
+            "bo_table": fwrite.bo_table.value,
+            "wr_id": fwrite.wr_id.value,
+            "wr_subject": fwrite.wr_subject.value,
+            "wr_name": fwrite.wr_name.value,
+            "wr_1": wr_1,
+            "wr_2": fwrite.wr_2.value,
+            "wr_3": fwrite.wr_3.value,
+            "wr_4": fwrite.wr_4.value,
+            "wr_email": fwrite.wr_email.value,
+            "wr_homepage": fwrite.wr_homepage.value,
+            "wr_content": fwrite.wr_content.value,
+            "captcha_key": fwrite.captcha_key.value,
+            "token": token,
+          },
+          dataType: "text",
+          error: function (xhr, status, error) {
+            switch (xhr.status) {
+              case 400:
+                alert('자동등록방지 숫자가 틀렸습니다.');
+                break;
+              default:
+                alert(error);
+            }
+          },
+          async: false,
+          cache: false,
+          success: function (data) {
+            alert("등록완료!");
+            $("#fwrite")[0].reset();
+          }
+        });
+      });
+    });
+
+
+  </script>
 
 </div>
 <!-- 여기 아래부터 모든 HTML 요소 구성 끝 -->

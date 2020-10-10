@@ -104,24 +104,98 @@
       <article>
         <p>21년의 시간, 695명 점주가 선택한 PC방 창업 노하우<br>
           <b>지금 창업문의하고 창업혜택 받으세요!</b></p>
-        <form action="">
+          <form action="" name="fwrite1" id="fwrite1" method="post">
+          <input type="hidden" name="uid" value="<?php echo get_uniqid(); ?>" id="uid">
+          <input type="hidden" name="w" value="<?php echo $w ?>" id="w">
+          <input type="hidden" name="bo_table" value="start_up_inquiry" id="bo_table">
+          <input type="hidden" name="wr_id" value="<?php echo $wr_id ?>" id="wr_id">
+          <input type="hidden" name="wr_subject" value="창업문의" id="wr_subject">
+          <input type="hidden" name="wr_content" value="창업문의" id="wr_content">
+          <input type="hidden" name="wr_homepage" value="" id="wr_homepage">
+          <input type="hidden" name="wr_email" value="" id="wr_email">
           <div class="input-area">
-            <input type="text" id="name" placeholder="이름">
-            <select name="" id="place">
-              <option value="" disabled>가맹희망지역</option>
-              <option value="">가맹희망지역</option>
-              <option value="">가맹희망지역</option>
+            <input type="text" name="wr_name" class="name" value="<?php echo $name ?>" id="wr_name" placeholder="이름" required>
+            <select name="wr_2" id="wr_2" class="place">
+              <option value="가맹희망지역" disabled>가맹희망지역</option>
+              <option value="가맹희망지역">가맹희망지역</option>
+              <option value="가맹희망지역">가맹희망지역</option>
             </select>
-            <input type="text" id="tel" placeholder="연락처">
+            <input type="text" id="wr_1" name="wr_1" class="tel" placeholder="연락처">
             <div class="info">
               <input type="checkbox" id="info"><label for="info">개인정보취급방침에 동의 <a href="">[전문보기]</a></label>
             </div>
           </div>
-          <button type="submit">창업문의<br>신청하기</button>
+          <button type="submit" class="btn_submit_1">창업문의<br>신청하기</button>
         </form>
       </article>
     </div>
   </section>
+  <script>
+    $(function () {
+    $('.btn_submit_1').click(function (e) {
+      e.preventDefault();
+
+      if ($.trim($('#wr_name').val()) == '') {
+        alert("이름을 입력하세요.");
+        $('#wr_name').focus();
+        return false;
+      }
+
+      if ($.trim($('#wr_1').val()) == '') {
+        alert("연락처를 입력하세요.");
+        $('#num2').focus();
+        return false;
+      }
+
+      if (!$('#info').is(":checked")) {
+        alert("개인정보보호취급방침에 동의해주세요.");
+        $('#info').focus();
+        return false;
+      }
+
+      var token = get_write_token(fwrite1.bo_table.value);
+      if (!token) {
+        alert("토큰 정보가 올바르지 않습니다.");
+        return false;
+      }
+
+      $.ajax({
+        url: g5_bbs_url + "/ajax.write_update.php",
+        type: "POST",
+        data: {
+          "uid": fwrite1.uid.value,
+          "w": fwrite1.w.value,
+          "bo_table": fwrite1.bo_table.value,
+          "wr_id": fwrite1.wr_id.value,
+          "wr_subject": fwrite1.wr_subject.value,
+          "wr_name": fwrite1.wr_name.value,
+          "wr_1": fwrite1.wr_1.value,
+          "wr_2": fwrite1.wr_2.value,
+          "wr_email": fwrite1.wr_email.value,
+          "wr_homepage": fwrite1.wr_homepage.value,
+          "wr_content": fwrite1.wr_content.value,
+          "token": token,
+        },
+        dataType: "text",
+        error: function (xhr, status, error) {
+          switch (xhr.status) {
+            case 400:
+              alert('자동등록방지 숫자가 틀렸습니다.');
+              break;
+            default:
+              alert(error);
+          }
+        },
+        async: false,
+        cache: false,
+        success: function (data) {
+          alert("등록완료!");
+          $("#fwrite1")[0].reset();
+        }
+      });
+    });
+  });
+  </script>
   <section id="section-05">
     <div class="inner">
       <section>
@@ -188,7 +262,15 @@
       </article>
       <article>
         <p>정보공개서 신청하기</p>
-        <form action="">
+        <form action="" name="fwrite2" id="fwrite2" method="post">
+          <input type="hidden" name="uid" value="<?php echo get_uniqid(); ?>" id="uid">
+          <input type="hidden" name="w" value="<?php echo $w ?>" id="w">
+          <input type="hidden" name="bo_table" value="information_disclosu" id="bo_table">
+          <input type="hidden" name="wr_id" value="<?php echo $wr_id ?>" id="wr_id">
+          <input type="hidden" name="wr_subject" value="정보공개서 신청하기" id="wr_subject">
+          <input type="hidden" name="wr_content" value="정보공개서 신청하기" id="wr_content">
+          <input type="hidden" name="wr_homepage" value="" id="wr_homepage">
+          <input type="hidden" name="wr_email" value="" id="wr_email">
           <div class="input-area">
             <input type="text" id="name" placeholder="이름">
             <select name="" id="place">
@@ -198,11 +280,77 @@
             </select>
             <input type="text" id="tel" placeholder="연락처">
             <div class="info">
-              <input type="checkbox" id="info"><label for="info">개인정보취급방침에 동의 <a href="">[전문보기]</a></label>
+              <input type="checkbox" id="info2"><label for="info2">개인정보취급방침에 동의 <a href="">[전문보기]</a></label>
             </div>
           </div>
-          <button type="submit">창업문의<br>신청하기</button>
+          <button class="btn_submit_2">창업문의<br>신청하기</button>
         </form>
+        <script>
+          $(function () {
+    $('.btn_submit_2').click(function (e) {
+      e.preventDefault();
+
+      if ($.trim($('#name').val()) == '') {
+        alert("이름을 입력하세요.");
+        $('#name').focus();
+        return false;
+      }
+
+      if ($.trim($('#tel').val()) == '') {
+        alert("연락처를 입력하세요.");
+        $('#num2').focus();
+        return false;
+      }
+
+      if (!$('#info2').is(":checked")) {
+        alert("개인정보보호취급방침에 동의해주세요.");
+        $('#info2').focus();
+        return false;
+      }
+
+      var token = get_write_token(fwrite2.bo_table.value);
+      if (!token) {
+        alert("토큰 정보가 올바르지 않습니다.");
+        return false;
+      }
+
+      $.ajax({
+        url: g5_bbs_url + "/ajax.write_update.php",
+        type: "POST",
+        data: {
+          "uid": fwrite2.uid.value,
+          "w": fwrite2.w.value,
+          "bo_table": fwrite2.bo_table.value,
+          "wr_id": fwrite2.wr_id.value,
+          "wr_subject": fwrite2.wr_subject.value,
+          "wr_name": $("#name").val(),
+          "wr_1": $("#tel").val(),
+          "wr_2": $("#place").val(),
+          "wr_email": fwrite2.wr_email.value,
+          "wr_homepage": fwrite2.wr_homepage.value,
+          "wr_content": fwrite2.wr_content.value,
+          "token": token,
+        },
+        dataType: "text",
+        error: function (xhr, status, error) {
+          switch (xhr.status) {
+            case 400:
+              alert('자동등록방지 숫자가 틀렸습니다.');
+              break;
+            default:
+              alert(error);
+          }
+        },
+        async: false,
+        cache: false,
+        success: function (data) {
+          alert("등록완료!");
+          $("#fwrite2")[0].reset();
+        }
+      });
+    });
+  });
+        </script>
       </article>
     </div>
   </section>

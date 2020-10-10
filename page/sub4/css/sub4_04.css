@@ -78,7 +78,8 @@
   font-family: "NEXON Lv2 Gothic";
   letter-spacing: -.5px;
 }
-.inner .wrap div dl dd input[type="text"] {
+.inner .wrap div dl dd input[type="text"],
+.inner .wrap div dl dd input[type="email"] {
   border: 1px solid #dcdcdc;
   box-sizing: border-box;
   padding: 0 5px;

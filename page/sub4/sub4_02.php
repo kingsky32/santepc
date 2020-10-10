@@ -72,7 +72,7 @@
       </li>
       <li>
         <div class="first">
-          <form name="fwrite" id="fwrite" method="post">
+          <form action="" name="fwrite" id="fwrite" method="post">
             <input type="hidden" name="uid" value="<?php echo get_uniqid(); ?>" id="uid">
             <input type="hidden" name="w" value="<?php echo $w ?>" id="w">
             <input type="hidden" name="bo_table" value="success_startup" id="bo_table">
@@ -80,7 +80,7 @@
             <input type="hidden" name="wr_subject" value="성공창업 문의" id="wr_subject">
             <input type="hidden" name="wr_email" value="" id="wr_email">
             <input type="hidden" name="wr_homepage" value="" id="wr_homepage">
-            <input type="hidden" name="wr_content" value="" id="wr_content">
+            <input type="hidden" name="wr_content" value="성공창업 문의" id="wr_content">
 
             <dl>
               <dt>이름</dt>
@@ -94,8 +94,8 @@
                   <option value="010">010</option>
                   <option value="010">010</option>
                 </select>-
-                <input type="text" id="num2">-
-                <input type="text" id="num3">
+                <input type="text" id="num2" maxlength="4">-
+                <input type="text" id="num3" maxlength="4">
               </dd>
             </dl>
             <dl>
@@ -134,8 +134,8 @@
             </dd>
           </dl>
           <div class="agree">
-            <input type="checkbox">
-            <label for="">위의 '개인정보보호취급방침'에 동의합니다.</label>
+            <input type="checkbox" id="agree">
+            <label for="agree">위의 '개인정보보호취급방침'에 동의합니다.</label>
           </div>
         </div>
         <div class="thir">
@@ -177,21 +177,24 @@
         return false;
       }
 
-      var uid = "uid=" + $("#uid").val();
-      var w = "w=" + $("#w").val();
-      var bo_table = "bo_table=" + $("#bo_table").val();
-      var wr_id = "wr_id=" + $("#wr_id").val();
-      var wr_subject = "wr_subject=" + $("#wr_subject").val();
-      var wr_name = "wr_name=" + $("#wr_name").val();
-      var wr_1 = "wr_1=" + $("#num1").val() + $("#num2").val() + $("#num3").val();
-      var wr_2 = "wr_2=" + $("#sido").val();
-      var wr_3 = "wr_3=" + $("#gugun").val();
-      var wr_email = "wr_email=" + $("#wr_email").val();
-      var wr_homepage = "wr_homepage=" + $("#wr_homepage").val();
-      var wr_content = "wr_content=" + $("#wr_content").val();
+      if (!$('#agree').is(":checked")) {
+        alert("개인정보보호취급방침에 동의해주세요.");
+        $('#agree').focus();
+        return false;
+      }
+
+      var token = get_write_token(fwrite.bo_table.value);
+      if(!token) {
+          alert("토큰 정보가 올바르지 않습니다.");
+          return false;
+      }
+
+      var wr_1 = $("#num1").val() + $("#num2").val() + $("#num3").val();
+      var wr_2 = $("#sido").val();
+      var wr_3 = $("#gugun").val();
 
       $.ajax({
-        url: g5_bbs_url + "/write_update.php",
+        url: g5_bbs_url + "/ajax.write_update.php",
         type: "POST",
         data: {
           "uid": fwrite.uid.value,
@@ -205,16 +208,23 @@
           "wr_3": wr_3,
           "wr_email": fwrite.wr_email.value,
           "wr_homepage": fwrite.wr_homepage.value,
-          "wr_content": fwrite.wr_content.value
+          "wr_content": fwrite.wr_content.value,
+          "captcha_key": fwrite.captcha_key.value,
+          "token": token,
         },
         dataType: "text",
         error: function (xhr, status, error) {
-          alert(error);
+          switch (xhr.status) {
+            case 400:
+              alert('자동등록방지 숫자가 틀렸습니다.');
+              break;
+            default:
+              alert(error);
+          }
         },
         async: false,
         cache: false,
         success: function (data) {
-          console.log(data);
           alert("등록완료!");
           $("#fwrite")[0].reset();
         }
