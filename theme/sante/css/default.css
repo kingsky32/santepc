@@ -6,6 +6,10 @@ html,
   min-width: 1400px;
 }
 
+/* 화면낭독기 사용자용 */
+#hd_login_msg {position:absolute;top:0;left:0;font-size:0;line-height:0;overflow:hidden}
+.msg_sound_only, .sound_only {display:inline-block !important;position:absolute;top:0;left:0;width:0;height:0;margin:0 !important;padding:0 !important;font-size:0;line-height:0;border:0 !important;overflow:hidden !important}
+
 /* 캡챠 자동등록(입력)방지 기본 -pc */
 #captcha {
   display: inline-block;

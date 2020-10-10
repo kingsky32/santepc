@@ -225,9 +225,6 @@
   margin-bottom: 10px;
 }
 
-#section-04 article:nth-child(2) form .input-area .info {
-}
-
 #section-04 article:nth-child(2) form .input-area input,
 #section-04 article:nth-child(2) form .input-area select {
   padding: 16px 12px;
@@ -428,9 +425,6 @@
 #section-06 article:nth-child(2) form .input-area #tel {
   flex: 1 1 100%;
   margin-bottom: 10px;
-}
-
-#section-06 article:nth-child(2) form .input-area .info {
 }
 
 #section-06 article:nth-child(2) form .input-area input,

@@ -34,7 +34,7 @@ function get_paging($write_pages, $cur_page, $total_page, $url, $add="")
 
     if ($end_page >= $total_page) $end_page = $total_page;
 
-    if ($start_page > 1) $str .= '<a href="'.$url.($start_page-1).$add.'" class="pg_page pg_prev">이전</a>'.PHP_EOL;
+    if ($cur_page > 1) $str .= '<a href="'.$url.($cur_page-1).$add.'" class="pg_page pg_prev">이전</a>'.PHP_EOL;
 
     if ($total_page > 1) {
         for ($k=$start_page;$k<=$end_page;$k++) {
@@ -45,7 +45,7 @@ function get_paging($write_pages, $cur_page, $total_page, $url, $add="")
         }
     }
 
-    if ($total_page > $end_page) $str .= '<a href="'.$url.($end_page+1).$add.'" class="pg_page pg_next">다음</a>'.PHP_EOL;
+    if ($cur_page < $total_page) $str .= '<a href="'.$url.($cur_page+1).$add.'" class="pg_page pg_next">다음</a>'.PHP_EOL;
 
     if ($cur_page < $total_page) {
         $str .= '<a href="'.$url.$total_page.$add.'" class="pg_page pg_end">맨끝</a>'.PHP_EOL;
@@ -401,10 +401,10 @@ function get_list($write_row, $board, $skin_url, $subject_len=40)
     // 당일인 경우 시간으로 표시함
     $list['datetime'] = substr($list['wr_datetime'],0,10);
     $list['datetime2'] = $list['wr_datetime'];
-    if ($list['datetime'] == G5_TIME_YMD)
-        $list['datetime2'] = substr($list['datetime2'],11,5);
-    else
-        $list['datetime2'] = substr($list['datetime2'],5,5);
+    // if ($list['datetime'] == G5_TIME_YMD)
+    //     $list['datetime2'] = substr($list['datetime2'],11,5);
+    // else
+        $list['datetime2'] = date("Y-m-d", strtotime($list['datetime2']));
     // 4.1
     $list['last'] = substr($list['wr_last'],0,10);
     $list['last2'] = $list['wr_last'];
