@@ -12,11 +12,11 @@
   </div>
   <nav class="lnb">
     <ul>
-      <li><a href="/page/sub6/sub6_01.php">공지사항</a></li>
-      <li class="on"><a href="/page/sub6/sub6_02.php">언론보도</a></li>
-      <li><a href="/page/sub6/sub6_03.php">이벤트</a></li>
-      <li><a href="/page/sub6/sub6_04.php">오픈소식</a></li>
-      <li><a href="/page/sub6/sub6_05.php">FAQ</a></li>
+      <li><a href="/bbs/board.php?bo_table=notice">공지사항</a></li>
+      <li class="on"><a href="/bbs/board.php?bo_table=news">언론보도</a></li>
+      <li><a href="/bbs/board.php?bo_table=event">이벤트</a></li>
+      <li><a href="/bbs/board.php?bo_table=open_news">오픈소식</a></li>
+      <li><a href="/bbs/board.php?bo_table=qa">FAQ</a></li>
     </ul>
   </nav>
   <div class="inner">

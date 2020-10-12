@@ -15,16 +15,16 @@
   </div>
   <nav class="lnb">
     <ul>
-      <li><a href="/page/sub3/sub3_01.php">창업대출</a></li>
-      <li><a href="/page/sub3/sub3_02.php">안심창업시스템</a></li>
-      <li><a href="/page/sub3/sub3_03.php">성공 마케팅 전략</a></li>
-      <li class="on"><a href="/page/sub3/sub3_04.php">이달의 창업혜택</a></li>
-      <li><a href="/page/sub3/sub3_05.php">정보공개서 신청</a></li>
+      <li class="on"><a href="#page1">창업대출</a></li>
+      <li><a href="#page2">안심창업시스템</a></li>
+      <li><a href="#page3">성공 마케팅 전략</a></li>
+      <li><a href="#page4">이달의 창업혜택</a></li>
+      <li><a href="#page5">정보공개서 신청</a></li>
     </ul>
   </nav>
   <section id="section-01">
     <div class="inner">
-      <h3 class="title">높은 승인율을 자랑하는 샹떼PC방의 창업대출</h3>
+      <h3 class="title" id="page1">높은 승인율을 자랑하는 샹떼PC방의 창업대출</h3>
       <hr>
       <section>
         <article>
@@ -40,7 +40,7 @@
   </section>
   <section id="section-02">
     <div class="inner">
-      <h3 class="title">불안감은 내려놓고, 샹떼PC방에서 안심하고 창업하세요!</h3>
+      <h3 class="title" id="page2">불안감은 내려놓고, 샹떼PC방에서 안심하고 창업하세요!</h3>
       <hr>
       <h5>가맹점이 있어야 본사가 산다</h5>
       <p>각 가맹점의 목표 매출을 설정하여 오픈 후 목표 매출을 달성하지 못하면<br>
@@ -51,7 +51,7 @@
   </section>
   <section id="section-03">
     <div class="inner">
-      <h3 class="title">업계 최고의 전문가팀으로 구성된 샹떼PC방의 성공마케팅 전략</h3>
+      <h3 class="title" id="page3">업계 최고의 전문가팀으로 구성된 샹떼PC방의 성공마케팅 전략</h3>
       <hr>
       <section>
         <article>
@@ -197,7 +197,7 @@
   });
   </script>
   <section id="section-05">
-    <div class="inner">
+    <div class="inner" id="page4">
       <section>
         <article>
           <img src="<?php echo G5_IMG_URL ?>/sub/sub3/sub3_04_img_07.png" alt="img">
@@ -249,7 +249,7 @@
     </div>
   </section>
   <section id="section-06" style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub3/sub3_04_img_11.png')">
-    <div class="inner">
+    <div class="inner" id="page5">
       <article>
         <h5>No.1 브랜드를 넘어<b>Only 1 브랜드를 지향합니다.</b></h5>
         <p class="sub">샹떼PC방에서는 공정거래위원회에 등록된 <b>‘정보공개서’ 원본</b>을<br>
@@ -273,10 +273,10 @@
           <input type="hidden" name="wr_email" value="" id="wr_email">
           <div class="input-area">
             <input type="text" id="name" placeholder="이름">
-            <select name="" id="place">
-              <option value="" disabled>가맹희망지역</option>
-              <option value="">가맹희망지역</option>
-              <option value="">가맹희망지역</option>
+            <select name="place" id="place">
+              <option value="가맹희망지역" disabled>가맹희망지역</option>
+              <option value="가맹희망지역">가맹희망지역</option>
+              <option value="가맹희망지역">가맹희망지역</option>
             </select>
             <input type="text" id="tel" placeholder="연락처">
             <div class="info">
@@ -355,6 +355,43 @@
     </div>
   </section>
 </div>
+
+<script>
+  $(window).on('scroll', function () {
+    const scrollTop = $(window).scrollTop();
+    if (scrollTop >= 3700.640625){
+      $('.sub_container .lnb ul li').removeClass('on');
+      $('.sub_container .lnb ul li').eq(4).addClass('on');
+    } else if (scrollTop >= 3117.453125) {
+      $('.sub_container .lnb ul li').removeClass('on');
+      $('.sub_container .lnb ul li').eq(3).addClass('on');
+    } else if (scrollTop >= 2225.453125) {
+      $('.sub_container .lnb ul li').removeClass('on');
+      $('.sub_container .lnb ul li').eq(2).addClass('on');
+    } else if (scrollTop >= 1116) {
+      $('.sub_container .lnb ul li').removeClass('on');
+      $('.sub_container .lnb ul li').eq(1).addClass('on');
+    } else {
+      $('.sub_container .lnb ul li').removeClass('on');
+      $('.sub_container .lnb ul li').eq(0).addClass('on');
+    }
+  });
+
+  $('#gnb ul > li:nth-child(3) a').on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({
+      'scrollTop': $($(this).attr('href').slice(-6)).offset().top - 100
+    }, 500);
+  });
+
+  $('.lnb li a').on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({
+      'scrollTop': $($(this).attr('href')).offset().top - 100
+    }, 500);
+  });
+
+</script>
 
 <!-- 여기 아래부터 모든 HTML 요소 구성 끝 -->
 <?php

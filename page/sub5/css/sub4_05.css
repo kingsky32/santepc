@@ -1,0 +1,32 @@
+@charset "utf-8";
+* {letter-spacing:1px; outline:unset;}
+.inner {
+	width: 1300px;
+}
+
+.sub_container .inner > p {font-family: "NEXON Lv2 Gothic"; font-size: 24px; line-height: 40px; font-weight: 500; letter-spacing: -1px; text-align: center; margin-bottom:25px;}
+.sub_container .inner .title {font-family: "NEXON Lv2 Gothic"; font-size: 36px; letter-spacing: -2px; font-weight: 500; text-align: center; margin-top: 120px; margin-bottom: 35px;}
+.sub_container hr {display: block; margin: 0 auto; width: 66px; border-width: 1px; border-style: solid; border-color: #008574; margin-bottom: 57px;}
+
+
+.inner .wrap {max-width:650px; width:100%; margin:0 auto; border-top:1px solid #008574; border-bottom:1px solid #008574;}
+.inner .wrap > div {box-sizing:border-box; padding:30px 75px;}
+.inner .wrap > div:first-of-type {border-bottom:1px solid #dcdcdc;}
+.inner .wrap dl {margin-bottom:10px;}
+.inner .wrap dl:last-of-type {margin-bottom:0;}
+.inner .wrap dl::after {content:''; display:block; visibility:hidden; clear:both;}
+.inner .wrap dl dt {float:left; width:25%; line-height:50px; font-size:18px; text-align:left; font-weight:bold; color:#222; font-family: "NEXON Lv2 Gothic";}
+.inner .wrap dl dd {float:left; width:75%; font-family: "NEXON Lv2 Gothic";}
+.inner .wrap dl dd input[type="text"] {border:1px solid #dcdcdc; box-sizing:border-box; padding:0 5px; font-size:18px; color:#979797; font-family: "NEXON Lv2 Gothic"; height:50px; width: 100%;}
+.inner .wrap dl dd select {width:28.8%; border:1px solid #dcdcdc; box-sizing:border-box; padding:0 5px; font-size:18px; color:#979797; font-family: "NEXON Lv2 Gothic"; height:50px;}
+.inner .wrap dl dd input[type="date"] {border:1px solid #dcdcdc; box-sizing:border-box; padding:0 5px; font-size:18px; color:#979797; font-family: "NEXON Lv2 Gothic"; height:50px; width: 100%;}
+.inner .wrap dl:nth-of-type(2) dd input[type="text"] {width:28.8%;}
+.inner .wrap dl:first-of-type dt {line-height:1.4em;}
+.inner .wrap dl:first-of-type dd p {width:370px; height:150px; overflow-y:scroll; box-sizing:border-box; padding:25px; border:1px solid #dcdcdc; font-size:14px; font-family: "NEXON Lv2 Gothic"; color:#979797; font-weight:500; line-height:1.4em; letter-spacing: 0;}
+.inner .wrap .agree {display:table; border:0; margin-top:10px; margin-left:120px;}
+.inner .wrap .agree input[type="checkbox"] {vertical-align:middle; margin:0;}
+.inner .wrap .agree label {font-family: "NEXON Lv2 Gothic"; font-size:14px; color:#008574; line-height:1; font-weight:600;margin-left:3px;}
+.inner > dl {max-width:650px; width:100%; margin:0 auto; box-sizing:border-box; padding-top:30px; padding-left:75px; padding-bottom:75px;}
+.inner dl dt {float:left; width:25%; line-height:50px; font-size:18px; text-align:left; font-weight:bold; color:#222; font-family: "NEXON Lv2 Gothic";}
+.inner dl dd {float:left; width:75%; font-family: "NEXON Lv2 Gothic";}
+a.pink_btn {margin:30px auto 125px; border-radius:3px;}

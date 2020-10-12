@@ -19,7 +19,7 @@
 <!-- 여기 아래부터 모든 HTML 요소 구성 시작 -->
 
 <div class="sub_container">
-  <div class="main-vis" style="background-image: url('http://santepc.seung-ju.com/img/sub/sub_bg.png');">
+  <div class="main-vis" style="background-image: url('/img/sub/sub_bg.png');">
     <h2>성공창업</h2>
   </div>
   <nav class="lnb">
@@ -29,7 +29,7 @@
       <li><a href="/page/sub4/sub4_03.php">추천점포 제휴문의</a></li>
       <li><a href="/page/sub4/sub4_04.php">리모델링 신청</a></li>
       <li class="on"><a href="/page/sub4/sub4_05.php">사업설명회 신청</a></li>
-      <li><a href="/page/sub4/sub4_06.php">성공창업이야기</a></li>
+      <li><a href="/bbs/board.php?bo_table=story_successful">성공창업이야기</a></li>
     </ul>
   </nav>
   <div class="inner">

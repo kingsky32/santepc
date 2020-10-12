@@ -48,13 +48,13 @@ if(!defined('_INDEX_')) { // index가 아닐때 실행
                         <li><a href="/page/sub2/sub2_01.php#page6">전문 PC관리 시스템</a></li>
                     </ol>
                 </li>
-                <li><a href="/page/sub3/sub3_01.php">창업혜택</a>
+                <li><a href="/page/sub3/sub3_04.php">창업혜택</a>
                     <ol>
-                        <li><a href="/page/sub3/sub3_01.php">창업대출</a></li>
-                        <li><a href="/page/sub3/sub3_02.php">안심창업시스템</a></li>
-                        <li><a href="/page/sub3/sub3_03.php">성공 마케팅 전략</a></li>
-                        <li><a href="/page/sub3/sub3_04.php">이달의 창업혜택</a></li>
-                        <li><a href="/page/sub3/sub3_05.php">정보공개서 신청</a></li>
+                        <li><a href="/page/sub3/sub3_04.php#page1">창업대출</a></li>
+                        <li><a href="/page/sub3/sub3_04.php#page2">안심창업시스템</a></li>
+                        <li><a href="/page/sub3/sub3_04.php#page3">성공 마케팅 전략</a></li>
+                        <li><a href="/page/sub3/sub3_04.php#page4">이달의 창업혜택</a></li>
+                        <li><a href="/page/sub3/sub3_04.php#page5">정보공개서 신청</a></li>
                     </ol>
                 </li>
                 <li><a href="/page/sub4/sub4_01.php">성공창업</a>
@@ -64,22 +64,23 @@ if(!defined('_INDEX_')) { // index가 아닐때 실행
                         <li><a href="/page/sub4/sub4_03.php">추천점포</a></li>
                         <li><a href="/page/sub4/sub4_04.php">리모델링 신청</a></li>
                         <li><a href="/page/sub4/sub4_05.php">사업설명회 신청</a></li>
-                        <li><a href="/page/sub4/sub4_06.php">성공창업이야기</a></li>
+                        <li><a href="/bbs/board.php?bo_table=story_successful">성공창업이야기</a></li>
                     </ol>
                 </li>
                 <li><a href="/page/sub5/sub5_01.php">인테리어</a>
                     <ol>
                         <li><a href="/page/sub5/sub5_01.php">인테리어</a></li>
-                        <li><a href="/page/sub5/sub5_02.php">VR</a></li>
+                        <li><a href="/page/sub5/sub5_021.php">인테리어 컨셉 소개</a></li>
+                        <li><a href="">VR</a></li>
                     </ol>
                 </li>
-                <li><a href="/page/sub6/sub6_01.php">커뮤니티</a>
+                <li><a href="/bbs/board.php?bo_table=notice">커뮤니티</a>
                     <ol>
-                        <li><a href="/page/sub6/sub6_01.php">공지사항</a></li>
-                        <li><a href="/page/sub6/sub6_02.php">언론보도</a></li>
-                        <li><a href="/page/sub6/sub6_03.php">이벤트</a></li>
-                        <li><a href="/page/sub6/sub6_04.php">오픈소식</a></li>
-                        <li><a href="/page/sub6/sub6_05.php">FAQ</a></li>
+                        <li><a href="/bbs/board.php?bo_table=notice">공지사항</a></li>
+                        <li><a href="/bbs/board.php?bo_table=news">언론보도</a></li>
+                        <li><a href="/bbs/board.php?bo_table=event">이벤트</a></li>
+                        <li><a href="/bbs/board.php?bo_table=open_news">오픈소식</a></li>
+                        <li><a href="/bbs/board.php?bo_table=qa">FAQ</a></li>
                     </ol>
                 </li>
             </ul>

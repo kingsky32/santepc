@@ -4,6 +4,46 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 // add_stylesheet('css 구문', 출력순서); 숫자가 작을 수록 먼저 출력됨
 add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0);
 ?>
+<div class="sub_container">
+    <div class="main-vis" style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub_bg.png');">
+        <h2>커뮤니티</h2>
+    </div>
+
+    <nav class="lnb">
+        <ul>
+        <li><a href="/bbs/board.php?bo_table=notice">공지사항</a></li>
+        <li><a href="/bbs/board.php?bo_table=news">언론보도</a></li>
+        <li><a href="/bbs/board.php?bo_table=event">이벤트</a></li>
+        <li><a href="/bbs/board.php?bo_table=open_news">오픈소식</a></li>
+        <li><a href="/bbs/board.php?bo_table=qa">FAQ</a></li>
+        </ul>
+    </nav>
+    <script>
+        switch("<?php echo $board['bo_subject'] ?>") {
+            case "공지사항":
+                $(".lnb ul li").eq(0).addClass('on');
+                break;
+            case "언론보도":
+                $(".lnb ul li").eq(1).addClass('on');
+                break;
+            case "이벤트":
+                $(".lnb ul li").eq(2).addClass('on');
+                break;
+            case "오픈소식":
+                $(".lnb ul li").eq(3).addClass('on');
+                break;
+            case "FAQ":
+                $(".lnb ul li").eq(4).addClass('on');
+                break;
+            default:
+                $(".lnb ul li").eq(0).addClass('on');
+        }
+    </script>
+    
+    <h3 class="title"><?php echo $board['bo_subject'] ?></h3>
+    <hr>
+
+    <div class="inner">
 
 <section id="bo_w">
     <h2 class="sound_only"><?php echo $g5['title'] ?></h2>
@@ -76,6 +116,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 			<input type="text" name="wr_email" value="<?php echo $email ?>" id="wr_email" class="frm_input half_input email " placeholder="이메일">
 	    <?php } ?>
 	    
+	
 	    <?php if ($is_homepage) { ?>
 	        <label for="wr_homepage" class="sound_only">홈페이지</label>
 	        <input type="text" name="wr_homepage" value="<?php echo $homepage ?>" id="wr_homepage" class="frm_input half_input" size="50" placeholder="홈페이지">
@@ -107,6 +148,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             </div>
             <?php } ?>
         </div>
+        
     </div>
 
     <div class="write_div">
@@ -251,3 +293,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     </script>
 </section>
 <!-- } 게시물 작성/수정 끝 -->
+</div>
+</div>
+</div>

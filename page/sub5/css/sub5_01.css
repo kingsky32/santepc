@@ -1,0 +1,46 @@
+@charset "utf-8";
+* {letter-spacing:1px; outline:unset;}
+.inner {
+  width: 1300px;
+}
+
+#wrapper {overflow:hidden;}
+.sub_container .inner .section0 p {font-family: "NEXON Lv2 Gothic"; font-size: 24px; line-height: 40px; font-weight: 500; letter-spacing: -1px; text-align: center; margin-bottom:80px;}
+.sub_container .inner .section0 .title {font-family: "NEXON Lv2 Gothic"; font-size: 36px; letter-spacing: -2px; font-weight: 500; text-align: center; margin-top: 120px; margin-bottom: 35px;}
+.sub_container .section0 hr {display: block; margin: 0 auto; width: 66px; border-width: 1px; border-style: solid; border-color: #008574; margin-bottom: 57px;}
+
+.inner {}
+.inner > ul {max-width:860px; width:100%; margin:0 auto 110px; }
+.inner > ul::after {content:''; display:block; visibility:hidden; clear:both;}
+.inner > ul li {float:left; width:23.333%; padding-right:15%; overflow:hidden; position:relative;}
+.inner > ul li:last-of-type {padding-right:0;}
+.inner > ul li img {width:100%; margin:0 auto 25px;}
+.inner > ul li::before {content: ''; width: 20px; height: 20px; top: 40%; right: 17%; position: absolute; background: url(../img/before.png)no-repeat center; background-size: contain;}
+.inner > ul li:last-of-type::before {display:none;}
+.inner > ul li p {text-align:center; font-weight:bold; font-size:20px; font-family: "NEXON Lv2 Gothic";}
+
+.slide {width:84%; float: right; box-sizing: border-box; margin-left: 16%; overflow:hidden; margin-bottom:275px; position:relative; z-index:1;}
+
+.slide .rolling_list > div::after {content:''; display:block; visibility:hidden; clear:both;}
+.slide .rolling_list > div .text {float:left; width:21%;}
+.slide .rolling_list > div .text span {display:block; font-size:70px; font-weight:900; color:#e4e4e4; margin-bottom:20px; font-family: 'Titillium Web', sans-serif; margin-top:10px; letter-spacing:-1px;}
+.slide .rolling_list > div .text p.en {font-family: 'Titillium Web', sans-serif; font-size:70px; color:#119786; font-weight:200; margin-bottom:20px; letter-spacing:-1px;}
+.slide .rolling_list > div .text p.ko {font-size:36px; color:#282828; font-family: "NEXON Lv2 Gothic"; margin-bottom:20px; font-weight:500;}
+.slide .rolling_list > div .text a {display:table; text-align:center; border:1px solid #dcdcdc; font-size:18px; font-family: "NEXON Lv2 Gothic"; line-height:54px; color:#282828; padding:0 30px; transition:.3s;}
+.slide .rolling_list > div .text a:hover {border-color:#282828; color:#fff; background:#282828;}
+.slide .rolling_list > div .img {float:right; width:79%;}
+.slide .rolling_list > div .img img {width:100%;}
+
+.slide .bx-controls.bx-has-controls-direction {background:#008574; width:270px; height:90px; bottom:0; left:150px; position:absolute; z-index:2;}
+.slide .slide_wrap {z-index:1 !important;}
+.slide .bx-prev {text-indent:-9999px; background:url('../img/prev.png')no-repeat center; position:absolute; left:130px; top:50%; transform:translateY(-50%); width:70px; height:90px;}
+.slide .bx-next {text-indent:-9999px; background:url('../img/next.png')no-repeat center; position:absolute; top:50%; transform:translateY(-50%); right:0; width:70px; height:90px;}
+
+
+.slide .bx-pager.bx-default-pager {font-size:18px; color:#fff; position:absolute; transform:translateY(-50%); top:50%; left:40px;}
+
+
+.inner .section0 {position:relative; bottom:-150px; opacity:0; transition:all .6s;}
+.inner .section0.active {bottom:0; opacity:1;}
+.inner .section1 {position:relative; bottom:-150px; opacity:0; transition:all .6s; transition-delay:.6s;}
+.inner .section1.active {bottom:0; opacity:1;}

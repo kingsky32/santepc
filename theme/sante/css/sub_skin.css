@@ -3,7 +3,7 @@
 a.pink_btn {
   display: table;
   font-family: "NEXON Lv2 Gothic";
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   font-size: 22px;
   color: #ffffff;
   padding: 20px 125px;
@@ -34,7 +34,7 @@ a.pink_btn:hover {
 
 a.green_btn {
   font-family: "NEXON Lv2 Gothic";
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   font-size: 22px;
   font-weight: bold;
   color: #fff;
@@ -52,7 +52,7 @@ a.green_btn::before {
   content: ">";
   font-weight: bold;
   font-family: "NEXON Lv2 Gothic";
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   font-size: 22px;
   color: #fff;
   position: absolute;
@@ -143,7 +143,7 @@ a.green_btn:hover {
   line-height: 80px;
   color: #ffffff;
   font-family: "NEXON Lv2 Gothic";
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   font-weight: bold;
   font-size: 20px;
   position: relative;
@@ -180,7 +180,7 @@ a.green_btn:hover {
 
 #header nav > ul li ol li a {
   font-family: "NEXON Lv2 Gothic";
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   font-size: 16px;
   color: #ffffff;
 }
@@ -230,6 +230,7 @@ a.green_btn:hover {
   display: block;
   font-weight: bold;
   color: #008574;
+  letter-spacing: -2px;
 }
 
 #snb ul li:nth-child(2n) p b {
@@ -260,7 +261,7 @@ a.green_btn:hover {
 
 #footer .footer_copy p {
   font-family: "NEXON Lv2 Gothic";
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   font-size: 15px;
   line-height: 24px;
   color: #979797;
@@ -268,7 +269,7 @@ a.green_btn:hover {
 
 #footer .footer_copy span {
   font-family: "NEXON Lv2 Gothic";
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   font-weight: 500;
   font-size: 15px;
   line-height: 24px;
@@ -296,7 +297,7 @@ a.green_btn:hover {
 
 #footer .footer_more .footer_call p {
   font-family: "NEXON Lv2 Gothic";
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   font-weight: 500;
   font-size: 20px;
   color: #ffffff;
@@ -323,7 +324,7 @@ a.green_btn:hover {
 
 #footer .footer_more .footer_family p {
   font-family: "NEXON Lv2 Gothic";
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   font-weight: 500;
   font-size: 15px;
   color: #979797;
@@ -369,7 +370,7 @@ a.green_btn:hover {
   font-family: "NEXON Lv2 Gothic";
   font-weight: 500;
   font-size: 18px;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   color: #ffffff;
 }
 

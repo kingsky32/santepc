@@ -6,18 +6,46 @@ include_once(G5_LIB_PATH.'/thumbnail.lib.php');
 add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0);
 ?>
 
-
-<!-- 게시판 목록 시작 { -->
-<div id="bo_gall" style="width:<?php echo $width; ?>">
-
-    <?php if ($is_category) { ?>
-    <nav id="bo_cate">
-        <h2><?php echo $board['bo_subject'] ?> 카테고리</h2>
-        <ul id="bo_cate_ul">
-            <?php echo $category_option ?>
+<div class="sub_container">
+    <div class="main-vis" style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub_bg.png');">
+        <h2>커뮤니티</h2>
+    </div>
+    <nav class="lnb">
+        <ul>
+        <li><a href="/bbs/board.php?bo_table=notice">공지사항</a></li>
+        <li><a href="/bbs/board.php?bo_table=news">언론보도</a></li>
+        <li><a href="/bbs/board.php?bo_table=event">이벤트</a></li>
+        <li><a href="/bbs/board.php?bo_table=open_news">오픈소식</a></li>
+        <li><a href="/bbs/board.php?bo_table=qa">FAQ</a></li>
         </ul>
     </nav>
-    <?php } ?>
+    <script>
+        switch("<?php echo $board['bo_subject'] ?>") {
+            case "공지사항":
+                $(".lnb ul li").eq(0).addClass('on');
+                break;
+            case "언론보도":
+                $(".lnb ul li").eq(1).addClass('on');
+                break;
+            case "이벤트":
+                $(".lnb ul li").eq(2).addClass('on');
+                break;
+            case "오픈소식":
+                $(".lnb ul li").eq(3).addClass('on');
+                break;
+            case "FAQ":
+                $(".lnb ul li").eq(4).addClass('on');
+                break;
+            default:
+                $(".lnb ul li").eq(0).addClass('on');
+        }
+    </script>
+    
+    <h3 class="title"><?php echo $board['bo_subject'] ?></h3>
+    <hr>
+    <div class="inner">
+<!-- 게시판 목록 시작 { -->
+<div id="bo_gall" style="width:<?php echo $width; ?>">
 
     <form name="fboardlist"  id="fboardlist" action="<?php echo G5_BBS_URL; ?>/board_list_update.php" onsubmit="return fboardlist_submit(this);" method="post">
     <input type="hidden" name="bo_table" value="<?php echo $bo_table ?>">
@@ -31,17 +59,10 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
     <!-- 게시판 페이지 정보 및 버튼 시작 { -->
     <div id="bo_btn_top">
-        <div id="bo_list_total">
-            <span>Total <?php echo number_format($total_count) ?>건</span>
-            <?php echo $page ?> 페이지
-        </div>
 
         <ul class="btn_bo_user">
         	<?php if ($admin_href) { ?><li><a href="<?php echo $admin_href ?>" class="btn_admin btn" title="관리자"><i class="fa fa-cog fa-spin fa-fw"></i><span class="sound_only">관리자</span></a></li><?php } ?>
             <?php if ($rss_href) { ?><li><a href="<?php echo $rss_href ?>" class="btn_b01 btn" title="RSS"><i class="fa fa-rss" aria-hidden="true"></i><span class="sound_only">RSS</span></a></li><?php } ?>
-            <li>
-            	<button type="button" class="btn_bo_sch btn_b01 btn" title="게시판 검색"><i class="fa fa-search" aria-hidden="true"></i><span class="sound_only">게시판 검색</span></button> 
-            </li>
             <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="btn_b01 btn" title="글쓰기"><i class="fa fa-pencil" aria-hidden="true"></i><span class="sound_only">글쓰기</span></a></li><?php } ?>
         	<?php if ($is_admin == 'super' || $is_auth) {  ?>
         	<li>
@@ -135,27 +156,11 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                         	<!-- 갤러리 댓글기능 사용시 주석을 제거하세요. -->
                         
                             <?php echo $list[$i]['subject'] ?>                      
-                            <?php
-                            // if ($list[$i]['file']['count']) { echo '<'.$list[$i]['file']['count'].'>'; }
-                            if ($list[$i]['icon_new']) echo "<span class=\"new_icon\">N<span class=\"sound_only\">새글</span></span>";
-                            if (isset($list[$i]['icon_hot'])) echo rtrim($list[$i]['icon_hot']);
-                            //if (isset($list[$i]['icon_file'])) echo rtrim($list[$i]['icon_file']);
-                            //if (isset($list[$i]['icon_link'])) echo rtrim($list[$i]['icon_link']);
-                            if (isset($list[$i]['icon_secret'])) echo rtrim($list[$i]['icon_secret']);
-							?>
-							<?php if ($list[$i]['comment_cnt']) { ?><span class="sound_only">댓글</span><span class="cnt_cmt"><?php echo $list[$i]['wr_comment']; ?></span><span class="sound_only">개</span><?php } ?>
                          </a>
-                         <span class="bo_cnt"><?php echo utf8_strcut(strip_tags($list[$i]['wr_content']), 68, '..'); ?></span>
                     </div>
 
                     <div class="gall_info">
-                    	<span class="sound_only">작성자 </span><?php echo $list[$i]['name'] ?>
-                        <span class="gall_date"><span class="sound_only">작성일 </span><i class="fa fa-clock-o" aria-hidden="true"></i> <?php echo $list[$i]['datetime2'] ?></span>
-                    	<span class="gall_view"><span class="sound_only">조회 </span><i class="fa fa-eye" aria-hidden="true"></i> <?php echo $list[$i]['wr_hit'] ?></span>
-                    </div>
-                    <div class="gall_option">
-                    	<?php if ($is_good) { ?><span class="sound_only">추천</span><strong><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <?php echo $list[$i]['wr_good'] ?></strong><?php } ?>
-                        <?php if ($is_nogood) { ?><span class="sound_only">비추천</span><strong><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> <?php echo $list[$i]['wr_nogood'] ?></strong><?php } ?>           
+                        <span class="gall_date"><span class="sound_only">작성일 </span><?php echo $list[$i]['datetime2'] ?></span>
                     </div>
                 </div>
             </div>
@@ -184,7 +189,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     <!-- 게시판 검색 시작 { -->
     <div class="bo_sch_wrap">	
         <fieldset class="bo_sch">
-            <h3>검색</h3>
             <form name="fsearch" method="get">
             <input type="hidden" name="bo_table" value="<?php echo $bo_table ?>">
             <input type="hidden" name="sca" value="<?php echo $sca ?>">
@@ -194,10 +198,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                 <?php echo get_board_sfl_select_options($sfl); ?>
             </select>
             <label for="stx" class="sound_only">검색어<strong class="sound_only"> 필수</strong></label>
-            <div class="sch_bar">
-                <input type="text" name="stx" value="<?php echo stripslashes($stx) ?>" required id="stx" class="sch_input" size="25" maxlength="20" placeholder="검색어를 입력해주세요">
+                <input type="text" name="stx" value="<?php echo stripslashes($stx) ?>" required id="stx" class="sch_input" size="25" maxlength="20">
                 <button type="submit" value="검색" class="sch_btn"><i class="fa fa-search" aria-hidden="true"></i><span class="sound_only">검색</span></button>
-            </div>
             <button type="button" class="bo_sch_cls"><i class="fa fa-times" aria-hidden="true"></i><span class="sound_only">닫기</span></button>
             </form>
         </fieldset>
@@ -213,6 +215,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         });
     </script>
     <!-- } 게시판 검색 끝 -->
+</div>
+</div>
+</div>
 </div>
 
 <?php if($is_checkbox) { ?>

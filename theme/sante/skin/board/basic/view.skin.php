@@ -9,7 +9,44 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 <script src="<?php echo G5_JS_URL; ?>/viewimageresize.js"></script>
 
 <!-- 게시물 읽기 시작 { -->
-
+<div class="sub_container">
+    <div class="main-vis" style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub_bg.png');">
+        <h2>커뮤니티</h2>
+    </div>
+    <nav class="lnb">
+        <ul>
+        <li><a href="/bbs/board.php?bo_table=notice">공지사항</a></li>
+        <li><a href="/bbs/board.php?bo_table=news">언론보도</a></li>
+        <li><a href="/bbs/board.php?bo_table=event">이벤트</a></li>
+        <li><a href="/bbs/board.php?bo_table=open_news">오픈소식</a></li>
+        <li><a href="/bbs/board.php?bo_table=qa">FAQ</a></li>
+        </ul>
+    </nav>
+    <script>
+        switch("<?php echo $board['bo_subject'] ?>") {
+            case "공지사항":
+                $(".lnb ul li").eq(0).addClass('on');
+                break;
+            case "언론보도":
+                $(".lnb ul li").eq(1).addClass('on');
+                break;
+            case "이벤트":
+                $(".lnb ul li").eq(2).addClass('on');
+                break;
+            case "오픈소식":
+                $(".lnb ul li").eq(3).addClass('on');
+                break;
+            case "FAQ":
+                $(".lnb ul li").eq(4).addClass('on');
+                break;
+            default:
+                $(".lnb ul li").eq(0).addClass('on');
+        }
+    </script>
+    
+    <h3 class="title"><?php echo $board['bo_subject'] ?></h3>
+    <hr>
+    <div class="inner">
 <article id="bo_v" style="width:<?php echo $width; ?>">
     <header>
         <h2 id="bo_v_title">
@@ -102,7 +139,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
          ?>
 
         <!-- 본문 내용 시작 { -->
-        <div id="bo_v_con"><?php echo get_view_thumbnail($view['content']); ?></div>
+        <div id="bo_v_con">
+            <?php echo get_view_thumbnail($view['content']); ?>
+        </div>
         <?php //echo $view['rich_content']; // {이미지:0} 과 같은 코드를 사용할 경우 ?>
         <!-- } 본문 내용 끝 -->
 
@@ -219,6 +258,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 	?>
 </article>
 <!-- } 게시판 읽기 끝 -->
+</div>
+</div>
 
 <script>
 <?php if ($board['bo_download_point'] < 0) { ?>

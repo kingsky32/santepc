@@ -135,30 +135,30 @@
             </div>
           </div>
           <div class="slide">
-            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_slide_01.png" alt="img">
+            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_slide_02.png" alt="img">
             <div class="text">
-              <span>30cm의 차이</span>
-              <p>고객을 위한 최적화된 길이의 슬라이딩 데스크!<br>
-                다양한 먹거리와 개인 소품을 맘껏 올려두고<br>
-                쾌적하게 게임을 즐길 수 있습니다.</p>
+              <span>프리미엄<br>파우더 코트</span>
+              <p>고품질 파우더 코팅으로 상판의 곡선 면이<br>
+부드럽고 깔끔하며, 오랜 기간 사용해도 필름의 들뜸<br>
+현상이 없습니다!</p>
             </div>
           </div>
           <div class="slide">
-            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_slide_01.png" alt="img">
+            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_slide_03.png" alt="img">
             <div class="text">
-              <span>30cm의 차이</span>
-              <p>고객을 위한 최적화된 길이의 슬라이딩 데스크!<br>
-                다양한 먹거리와 개인 소품을 맘껏 올려두고<br>
-                쾌적하게 게임을 즐길 수 있습니다.</p>
+              <span>넓고 쾌적한 공간</span>
+              <p>음식을 마음껏 놓고 게임할 수 있는 공간에 만족한<br>
+고객은 타 매장으로의 이탈률이 발생하지 않으며,<br>
+먹거리 매출까지 동반 상승합니다.</p>
             </div>
           </div>
           <div class="slide">
-            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_slide_01.png" alt="img">
+            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_slide_04.png" alt="img">
             <div class="text">
-              <span>30cm의 차이</span>
-              <p>고객을 위한 최적화된 길이의 슬라이딩 데스크!<br>
-                다양한 먹거리와 개인 소품을 맘껏 올려두고<br>
-                쾌적하게 게임을 즐길 수 있습니다.</p>
+              <span>언제나<br>청결함 제공</span>
+              <p>넓은 공간 구성으로 쉽고 빠른 청소가 가능하여<br>
+항상 깔끔하게 유지할 수 있으며,<br>
+고객은 항상 새 매장에 오는 느낌을 받을 수 있습니다.</p>
             </div>
           </div>
         </div>
@@ -303,7 +303,30 @@
 </div>
 
 <script>
-  $('#gnb li:nth-child(2) a').on('click', function (e) {
+  $(window).on('scroll', function () {
+    const scrollTop = $(window).scrollTop();
+    if (scrollTop >= 5870) {
+      $('.sub_container .lnb ul li').removeClass('on');
+      $('.sub_container .lnb ul li').eq(5).addClass('on');
+    } else if (scrollTop >= 4540){
+      $('.sub_container .lnb ul li').removeClass('on');
+      $('.sub_container .lnb ul li').eq(4).addClass('on');
+    } else if (scrollTop >= 3440) {
+      $('.sub_container .lnb ul li').removeClass('on');
+      $('.sub_container .lnb ul li').eq(3).addClass('on');
+    } else if (scrollTop >= 2365) {
+      $('.sub_container .lnb ul li').removeClass('on');
+      $('.sub_container .lnb ul li').eq(2).addClass('on');
+    } else if (scrollTop >= 1470) {
+      $('.sub_container .lnb ul li').removeClass('on');
+      $('.sub_container .lnb ul li').eq(1).addClass('on');
+    } else {
+      $('.sub_container .lnb ul li').removeClass('on');
+      $('.sub_container .lnb ul li').eq(0).addClass('on');
+    }
+  });
+
+  $('#gnb ul > li:nth-child(2) a').on('click', function (e) {
     e.preventDefault();
     $('html, body').animate({
       'scrollTop': $($(this).attr('href').slice(-6)).offset().top - 100

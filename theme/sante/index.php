@@ -20,10 +20,10 @@ include_once(G5_THEME_PATH.'/head.php');
             <ul id="gnb-child">
                 <li><a href="/page/sub1/sub1_01.php">브랜드 소개</a></li>
                 <li><a href="/page/sub2/sub2_01.php">성공 경쟁력</a></li>
-                <li><a href="/page/sub3/sub3_01.php">창업혜택</a></li>
+                <li><a href="/page/sub3/sub3_04.php#page1">창업혜택</a></li>
                 <li><a href="/page/sub4/sub4_01.php">성공창업</a></li>
                 <li><a href="/page/sub5/sub5_01.php">인테리어</a></li>
-                <li><a href="/page/sub6/sub6_01.php">커뮤니티</a></li>
+                <li><a href="/bbs/board.php?bo_table=notice">커뮤니티</a></li>
             </ul>
             <div id="line">line</div>
             <div id="submenu">
@@ -43,11 +43,11 @@ include_once(G5_THEME_PATH.'/head.php');
                     <li><a href="/page/sub2/sub2_01.php#page6">전문 PC관리 시스템</a></li>
                 </ul>
                 <ul>
-                    <li><a href="/page/sub3/sub3_01.php">창업대출</a></li>
-                    <li><a href="/page/sub3/sub3_02.php">안심창업시스템</a></li>
-                    <li><a href="/page/sub3/sub3_03.php">성공 마케팅 전략</a></li>
-                    <li><a href="/page/sub3/sub3_04.php">이달의 창업혜택</a></li>
-                    <li><a href="/page/sub3/sub3_05.php">정보공개서 신청</a></li>
+                    <li><a href="/page/sub3/sub3_04.php#page1">창업대출</a></li>
+                    <li><a href="/page/sub3/sub3_04.php#page2">안심창업시스템</a></li>
+                    <li><a href="/page/sub3/sub3_04.php#page3">성공 마케팅 전략</a></li>
+                    <li><a href="/page/sub3/sub3_04.php#page4">이달의 창업혜택</a></li>
+                    <li><a href="/page/sub3/sub3_04.php#page5">정보공개서 신청</a></li>
                 </ul>
                 <ul>
                     <li><a href="/page/sub4/sub4_01.php">수익성 분석</a></li>
@@ -59,14 +59,15 @@ include_once(G5_THEME_PATH.'/head.php');
                 </ul>
                 <ul>
                     <li><a href="/page/sub5/sub5_01.php">인테리어</a></li>
-                    <li><a href="/page/sub5/sub5_02.php">VR</a></li>
+                    <li><a href="/page/sub5/sub5_021.php">인테리어 컨셉 소개</a></li>
+                    <li><a href="">VR</a></li>
                 </ul>
                 <ul>
-                    <li><a href="/page/sub6/sub6_01.php">공지사항</a></li>
-                    <li><a href="/page/sub6/sub6_02.php">언론보도</a></li>
-                    <li><a href="/page/sub6/sub6_03.php">이벤트</a></li>
-                    <li><a href="/page/sub6/sub6_04.php">오픈소식</a></li>
-                    <li><a href="/page/sub6/sub6_05.php">FAQ</a></li>
+                    <li><a href="/bbs/board.php?bo_table=notice">공지사항</a></li>
+                    <li><a href="/bbs/board.php?bo_table=news">언론보도</a></li>
+                    <li><a href="/bbs/board.php?bo_table=event">이벤트</a></li>
+                    <li><a href="/bbs/board.php?bo_table=open_news">오픈소식</a></li>
+                    <li><a href="/bbs/board.php?bo_table=qa">FAQ</a></li>
                 </ul>
             </div>
         </nav>
@@ -126,7 +127,7 @@ include_once(G5_THEME_PATH.'/head.php');
         <section id="section-02">
             <div class="section-02-container">
                 <article>
-                    <a href="/page/sub3/sub3_01.php">
+                    <a href="/page/sub3/sub3_04.php#page1">
                         <img src="<?php echo G5_IMG_URL ?>/main/section-02-01-img.png" alt="img">
                     </a>
                 </article>
@@ -137,7 +138,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 </article>
                 <article>
                     <ul>
-                        <li><a href="/page/sub3/sub3_02.php">
+                        <li><a href="/page/sub3/sub3_04.php#page2">
                                 <img src="<?php echo G5_IMG_URL ?>/main/section-02-03-img.png" alt="img">
                             </a></li>
                         <li><a href="/page/sub2/sub2_01.php#page5">
@@ -146,7 +147,7 @@ include_once(G5_THEME_PATH.'/head.php');
                     </ul>
                     <p>꼭 필요한 부품들로 준비했습니다. <img src="<?php echo G5_IMG_URL ?>/arrow-down.png" alt="arrow-down"></p>
                     <div class="section-02-banner">
-                        <a href="/page/sub3/sub3_04.php">
+                        <a href="/page/sub3/sub3_04.php#page4">
                             <img src="<?php echo G5_IMG_URL ?>/main/section-02-05-img.png" alt="img">
                         </a>
                     </div>
@@ -278,6 +279,7 @@ include_once(G5_THEME_PATH.'/head.php');
     const $gnbChild = $("#gnb-child").children();
     const $subMenu = $("#submenu");
     let isLine = false;
+    let slideNum = 0;
 
     const lineFn = function (idx) {
         if (isLine) {
@@ -318,23 +320,28 @@ include_once(G5_THEME_PATH.'/head.php');
     const $slide = $('.main-container');
 
     const onSlide = function (num) {
-        $slide.children().not($slide.eq(num)).fadeOut();
-        $slide.children().eq(num).fadeIn();
-    }
-
-    const $pager = $('.container > ul > li');
-
-    $pager.on('click', function (e) {
-        $(this).addClass('active');
+        $($pager).eq(num).addClass('active');
         for (let i = 0; i < $pager.length; i++) {
             if ($pager.eq(i).find('img').attr('src').slice(-10) === "active.png") {
                 let temp = $pager.eq(i).find('img').attr('src').slice(0, -11);
                 $pager.eq(i).find('img').attr('src', temp + '.png');
             }
         }
-        let tmp = $(this).find('img').attr('src').slice(0, -4);
-        $(this).find('img').attr('src', tmp + '-active.png');
-        $pager.not($(this)).removeClass('active');
+        let tmp = $($pager).eq(num).find('img').attr('src').slice(0, -4);
+        $($pager).eq(num).find('img').attr('src', tmp + '-active.png');
+        $pager.not($($pager).eq(num)).removeClass('active');
+        $slide.children().not($slide.eq(num)).fadeOut();
+        $slide.children().eq(num).fadeIn();
+    }
+
+    const $pager = $('.container > ul > li');
+
+    setInterval(function () {
+        slideNum = slideNum == 3 ? 0 : slideNum + 1;
+        onSlide(slideNum);
+    }, 3000);
+
+    $pager.on('click', function (e) {
         onSlide($(this).index());
     });
 </script>
