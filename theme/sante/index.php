@@ -20,7 +20,7 @@ include_once(G5_THEME_PATH.'/head.php');
             <ul id="gnb-child">
                 <li><a href="/page/sub1/sub1_01.php">브랜드 소개</a></li>
                 <li><a href="/page/sub2/sub2_01.php">성공 경쟁력</a></li>
-                <li><a href="/page/sub3/sub3_04.php#page1">창업혜택</a></li>
+                <li><a href="/page/sub3/sub3_04.php">창업혜택</a></li>
                 <li><a href="/page/sub4/sub4_01.php">성공창업</a></li>
                 <li><a href="/page/sub5/sub5_01.php">인테리어</a></li>
                 <li><a href="/bbs/board.php?bo_table=notice">커뮤니티</a></li>
@@ -58,7 +58,7 @@ include_once(G5_THEME_PATH.'/head.php');
                     <li><a href="/page/sub4/sub4_05.php">성공창업이야기</a></li>
                 </ul>
                 <ul>
-                    <li><a href="/page/sub5/sub5_01.php">인테리어</a></li>
+                    <li><a href="/page/sub5/sub5_01.php">샹떼 인테리어</a></li>
                     <li><a href="/page/sub5/sub5_021.php">인테리어 컨셉 소개</a></li>
                     <li><a href="">VR</a></li>
                 </ul>
@@ -74,26 +74,26 @@ include_once(G5_THEME_PATH.'/head.php');
     </header>
     <aside class="left-side">
         <ul>
-            <li><a href="">
-                    <img src="<?php echo G5_IMG_URL ?>/communication.svg" alt="성공창업 상담신청">
-                    <p><b>성공창업</b>상담신청</p>
-                </a></li>
-            <li><a href="">
-                    <img src="<?php echo G5_IMG_URL ?>/building.svg" alt="창업대출 한도확인">
-                    <p><b>창업대출</b>한도확인</p>
-                </a></li>
-            <li><a href="">
-                    <img src="<?php echo G5_IMG_URL ?>/document.svg" alt="PC방전문 상권분석">
-                    <p><b>PC방전문</b>상권분석</p>
-                </a></li>
-            <li><a href="">
-                    <img src="<?php echo G5_IMG_URL ?>/alram.svg" alt="안전창업 시스템">
-                    <p><b>안전창업</b>시스템</p>
-                </a></li>
-            <li><a href="">
-                    <img src="<?php echo G5_IMG_URL ?>/certification.svg" alt="샹떼의 성공창업">
-                    <p><b>샹떼의</b>성공창업</p>
-                </a></li>
+        <li><a href="/page/sub4/sub4_02.php">
+                <img src="<?php echo G5_IMG_URL ?>/communication.svg" alt="성공창업 상담신청">
+                <p><b>성공창업</b>상담신청</p>
+            </a></li>
+        <li><a href="/page/sub3/sub3_04.php#page1">
+                <img src="<?php echo G5_IMG_URL ?>/building.svg" alt="창업대출 한도확인">
+                <p><b>창업대출</b>한도확인</p>
+            </a></li>
+        <li><a href="/page/sub2/sub2_01.php#page1">
+                <img src="<?php echo G5_IMG_URL ?>/document.svg" alt="PC방전문 상권분석">
+                <p><b>PC방전문</b>상권분석</p>
+            </a></li>
+        <li><a href="/page/sub3/sub3_04.php#page2">
+                <img src="<?php echo G5_IMG_URL ?>/alram.svg" alt="안전창업 시스템">
+                <p><b>안전창업</b>시스템</p>
+            </a></li>
+        <li><a href="/page/sub3/sub3_04.php#page3">
+                <img src="<?php echo G5_IMG_URL ?>/certification.svg" alt="샹떼의 성공창업">
+                <p><b>샹떼의</b>성공창업</p>
+            </a></li>
         </ul>
     </aside>
     <div class="content_container">
@@ -110,7 +110,7 @@ include_once(G5_THEME_PATH.'/head.php');
                     21
                 </div>
                 <div class="text">
-                    <div class="text-row"><b>년된</b>1988부터 시작한 <span class="red">PC방 장수브랜드</span></div>
+                    <div class="text-row"><b>년된</b>1998부터 시작한 <span class="red">PC방 장수브랜드</span></div>
                     <hr>
                     <div class="text-row"><b class="green">PC방 프랜차이즈</b></div>
                     <p class="since">SINCE 1998</p>
@@ -183,7 +183,7 @@ include_once(G5_THEME_PATH.'/head.php');
                     <div class="main">
                         <p>샹떼 다점포 점주님</p>
                         <h3><b>샹떼라서</b>가능한거죠.</h3>
-                        <span>1호점 2호점 모두 상떼PC방으로!</span>
+                        <span>1호점 2호점 모두 샹떼PC방으로!</span>
                         <a href="/page/sub4/sub4_05.php">자세히 보기</a>
                         <img src="<?php echo G5_IMG_URL ?>/main/jumju/jumju1-main.png" alt="main">
                     </div>
@@ -216,10 +216,10 @@ include_once(G5_THEME_PATH.'/head.php');
                 <div>
                     <div class="text">
                         <p>게이밍<br>마우스+키보드<br>+모니터</p>
-                        <span>게임하기 좋은 PC방 상떼!</span>
+                        <span>게임하기 좋은 PC방 샹떼!</span>
                     </div>
                     <div class="more">
-                        <a href="">
+                        <a href="/page/sub3/sub3_04.php#page4">
                             <img src="<?php echo G5_IMG_URL ?>/cycle-angle-right.png" alt="icon">
                             <span>자세히 보기</span>
                         </a>
@@ -233,7 +233,7 @@ include_once(G5_THEME_PATH.'/head.php');
                         <p>천정형 프리미엄<br>냉난방기<br><span class="beige">100%무상지원</span></p>
                     </div>
                     <div class="more">
-                        <a href="">
+                        <a href="/page/sub3/sub3_04.php#page4">
                             <img src="<?php echo G5_IMG_URL ?>/cycle-angle-right.png" alt="icon">
                             <span>자세히 보기</span>
                         </a>
@@ -248,7 +248,7 @@ include_once(G5_THEME_PATH.'/head.php');
                         <span>사양 업글로 게임 몰입감 상승!</span>
                     </div>
                     <div class="more">
-                        <a href="">
+                        <a href="/page/sub3/sub3_04.php#page4">
                             <img src="<?php echo G5_IMG_URL ?>/cycle-angle-right.png" alt="icon">
                             <span>자세히 보기</span>
                         </a>
@@ -261,14 +261,14 @@ include_once(G5_THEME_PATH.'/head.php');
                         <p>가계약금,<br>가맹비, 교육비<br>물류보증비<br><span class="beige">100%면제</span></p>
                     </div>
                     <div class="more">
-                        <a href="">
+                        <a href="/page/sub3/sub3_04.php#page4">
                             <img src="<?php echo G5_IMG_URL ?>/cycle-angle-right.png" alt="icon">
                             <span>자세히 보기</span>
                         </a>
                     </div>
                 </div>
             </article>
-            <a href="" class="button">상떼 창업패키지 자세히보기</a>
+            <a href="/page/sub3/sub3_04.php#page4" class="button">샹떼 창업패키지 자세히보기</a>
         </section>
     </div>
 </div>

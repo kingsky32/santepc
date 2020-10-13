@@ -59,7 +59,7 @@ header nav ul li a {
   line-height: 80px;
   color: #ffffff;
   font-family: "NEXON Lv2 Gothic";
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   font-weight: bold;
   font-size: 20px;
   position: relative;
@@ -205,7 +205,7 @@ header #submenu ul li a {
   color: #016b5d;
   opacity: 0;
   transform: translateX(-25px);
-  transition: .5s all ease;
+  transition: 0.25s all ease;
 }
 
 #section-01.active .big-text {
@@ -241,8 +241,8 @@ header #submenu ul li a {
   margin: 15px 0 25px;
   border-style: solid;
   width: 100vw;
-  transition: .5s all ease;
-  transition-delay: .25s;
+  transition: 0.25s all ease;
+  transition-delay: 0.25s;
   opacity: 0;
   transform: translateX(-25px);
 }
@@ -254,7 +254,7 @@ header #submenu ul li a {
 
 #section-01 .text .text-row {
   opacity: 0;
-  transition: .5s all ease;
+  transition: 0.25s all ease;
 }
 
 #section-01.active .text .text-row {
@@ -272,11 +272,11 @@ header #submenu ul li a {
   word-break: keep-all;
   white-space: pre;
   transform: translateY(-25px);
-  transition-delay: .5s;
+  transition-delay: 0.35s;
 }
 
 #section-01 .text .text-row:nth-of-type(2) {
-  transition-delay: .75s;
+  transition-delay: 0.55s;
   transform: translateY(25px);
 }
 
@@ -294,8 +294,8 @@ header #submenu ul li a {
   top: 10px;
   transform: translateY(25px);
   opacity: 0;
-  transition: .5s all ease;
-  transition-delay: 1s;
+  transition: 0.25s all ease;
+  transition-delay: 0.75s;
 }
 
 #section-01.active .text .since {
@@ -319,19 +319,19 @@ header #submenu ul li a {
 #section-02.active article {
   opacity: 1;
   transform: translateY(0);
-  transition: .5s all ease;
+  transition: 0.25s all ease;
 }
 
 #section-02 article:nth-child(1) {
-  transition-delay: .25s;
+  transition-delay: 0.15s;
 }
 
 #section-02 article:nth-child(2) {
-  transition-delay: .5s;
+  transition-delay: 0.3s;
 }
 
 #section-02 article:nth-child(3) {
-  transition-delay: .75s;
+  transition-delay: 0.45s;
 }
 
 #section-02 article:last-child {
@@ -399,7 +399,7 @@ header #submenu ul li a {
 #section-02 article:nth-child(3) ul li span {
   font-family: "NEXON Lv2 Gothic";
   font-size: 24px;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   display: block;
   color: #ff756e;
   font-weight: 500;
@@ -409,7 +409,7 @@ header #submenu ul li a {
 #section-02 article:nth-child(3) ul li h4 {
   font-family: "NEXON Lv2 Gothic";
   font-size: 44px;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   display: block;
   color: #ffffff;
   font-weight: 600;
@@ -419,7 +419,7 @@ header #submenu ul li a {
   font-family: "NEXON Lv2 Gothic";
   font-weight: 500;
   font-size: 22px;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   display: block;
   color: #ffffff;
   margin-top: 11px;
@@ -427,7 +427,7 @@ header #submenu ul li a {
 }
 
 #section-02 article:nth-child(3) > p img {
-  animation: section-02-animation 1s ease 1.5s infinite alternate;
+  animation: section-02-animation 0.5s ease 1.5s infinite alternate;
   margin-left: 5px;
 }
 
@@ -449,7 +449,7 @@ header #submenu ul li a {
   font-weight: 600;
   font-size: 44px;
   line-height: 52px;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   display: block;
   color: #ffffff;
 }
@@ -471,7 +471,7 @@ header #submenu ul li a {
 
 #section-03 .main-container {
   flex: 1;
-  transition: .5s opacity ease;
+  transition: 0.25s opacity ease;
 }
 
 #section-03 > span {
@@ -578,7 +578,7 @@ header #submenu ul li a {
 #section-03 .container .main p {
   font-family: "NEXON Lv2 Gothic";
   font-size: 50px;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   font-weight: 500;
   color: #008574;
   margin-bottom: 25px;
@@ -624,7 +624,7 @@ header #submenu ul li a {
   font-family: "NEXON Lv2 Gothic";
   font-weight: 500;
   font-size: 22px;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   width: 220px;
   display: block;
   text-align: center;
@@ -660,7 +660,7 @@ header #submenu ul li a {
   position: relative;
   background-repeat: no-repeat;
   background-size: auto 150%;
-  transition: .5s background-size ease;
+  transition: 0.25s background-size ease;
   background-position: center center;
 }
 
@@ -733,7 +733,7 @@ header #submenu ul li a {
   font-weight: 500;
   font-size: 30px;
   color: #ff6c6c;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   line-height: 42px;
 }
 
@@ -747,7 +747,7 @@ header #submenu ul li a {
 
 #section-04 article > div .more {
   opacity: 0;
-  transition: .3s opacity ease;
+  transition: 0.25s opacity ease;
 }
 
 #section-04 article > div .more img {
@@ -761,7 +761,7 @@ header #submenu ul li a {
   font-weight: 500;
   font-size: 24px;
   color: #ffffff;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   margin-top: 10px;
 }
 
@@ -792,7 +792,8 @@ header #submenu ul li a {
   position: absolute;
   left: 0;
   right: 0;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   margin: 0 auto;
   bottom: 70px;
+  z-index: 5;
 }

@@ -69,7 +69,7 @@ if(!defined('_INDEX_')) { // index가 아닐때 실행
                 </li>
                 <li><a href="/page/sub5/sub5_01.php">인테리어</a>
                     <ol>
-                        <li><a href="/page/sub5/sub5_01.php">인테리어</a></li>
+                        <li><a href="/page/sub5/sub5_01.php">샹떼 인테리어</a></li>
                         <li><a href="/page/sub5/sub5_021.php">인테리어 컨셉 소개</a></li>
                         <li><a href="">VR</a></li>
                     </ol>
@@ -141,23 +141,23 @@ if(!defined('_INDEX_')) { // index가 아닐때 실행
 
 <nav id="snb">
     <ul>
-        <li><a href="">
+        <li><a href="/page/sub4/sub4_02.php">
                 <img src="<?php echo G5_IMG_URL ?>/communication.svg" alt="성공창업 상담신청">
                 <p><b>성공창업</b>상담신청</p>
             </a></li>
-        <li><a href="">
+        <li><a href="/page/sub3/sub3_04.php#page1">
                 <img src="<?php echo G5_IMG_URL ?>/building.svg" alt="창업대출 한도확인">
                 <p><b>창업대출</b>한도확인</p>
             </a></li>
-        <li><a href="">
+        <li><a href="/page/sub2/sub2_01.php#page1">
                 <img src="<?php echo G5_IMG_URL ?>/document.svg" alt="PC방전문 상권분석">
                 <p><b>PC방전문</b>상권분석</p>
             </a></li>
-        <li><a href="">
+        <li><a href="/page/sub3/sub3_04.php#page2">
                 <img src="<?php echo G5_IMG_URL ?>/alram.svg" alt="안전창업 시스템">
                 <p><b>안전창업</b>시스템</p>
             </a></li>
-        <li><a href="">
+        <li><a href="/page/sub3/sub3_04.php#page3">
                 <img src="<?php echo G5_IMG_URL ?>/certification.svg" alt="샹떼의 성공창업">
                 <p><b>샹떼의</b>성공창업</p>
             </a></li>

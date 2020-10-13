@@ -6,12 +6,19 @@
 ?>
 <!-- 여기 아래부터 모든 HTML 요소 구성 시작 -->
 
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-<link rel="stylesheet" href="./css/sub2_01.css">
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+/>
+<link rel="stylesheet" href="./css/sub2_01.css" />
 
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script
+  type="text/javascript"
+  src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+></script>
 <div class="sub_container">
-  <div class="main-vis" style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub_bg.png');">
+  <div class="main-vis" style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub_bg.png')">
     <h2>성공 경쟁력</h2>
   </div>
   <nav class="lnb">
@@ -26,162 +33,188 @@
   </nav>
   <div class="inner" id="page1">
     <h3 class="title">PC방은 보통 타업종들과의 상권분석이 다릅니다.</h3>
-    <hr>
+    <hr />
   </div>
   <section class="section-01">
     <div class="inner">
       <article>
         <div class="icon">
-          <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_01.png" alt="icon">
+          <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_01.png" alt="icon" />
         </div>
         <div class="text">
           <div class="check">
-            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_check.png" alt="check">
+            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_check.png" alt="check" />
           </div>
-          <p>주변 입지<br>상권에 따라</p>
+          <p>주변 입지<br />상권에 따라</p>
         </div>
       </article>
       <article>
         <div class="icon">
-          <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_02.png" alt="icon">
+          <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_02.png" alt="icon" />
         </div>
         <div class="text">
           <div class="check">
-            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_check.png" alt="check">
+            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_check.png" alt="check" />
           </div>
-          <p>상가에 입점되어 있는<br>업종들에 따라</p>
+          <p>상가에 입점되어 있는<br />업종들에 따라</p>
         </div>
       </article>
       <article>
         <div class="icon">
-          <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_02.png" alt="icon">
+          <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_02.png" alt="icon" />
         </div>
         <div class="text">
           <div class="check">
-            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_check.png" alt="check">
+            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_check.png" alt="check" />
           </div>
-          <p>지자체별<br>관리에 따라</p>
+          <p>지자체별<br />관리에 따라</p>
         </div>
       </article>
     </div>
   </section>
   <section class="section-02">
-    <div class="inner" style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_01.png')">
-      <p><b>21년간의 오랜 경험을 통한 샹떼의 PC방 전문 빅데이터</b>
-        PC방 고객층의 행동패턴 분석<br>
-        상권별 특성에 맞춘 운영 방식<br>
-        샹떼만이 가진 전문 상권 Know-how</p>
+    <div
+      class="inner"
+      style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_01.png')"
+    >
+      <p>
+        <b>21년간의 오랜 경험을 통한 샹떼의 PC방 전문 빅데이터</b> PC방 고객층의 행동패턴 분석<br />
+        상권별 특성에 맞춘 운영 방식<br />
+        샹떼만이 가진 전문 상권 Know-how
+      </p>
       <h3><b>21</b>년, <b>695</b>점 오픈</h3>
       <span>샹떼PC방만의 <b>상권분석 노하우!</b></span>
-      <a href="">PC방 전문 상권분석 신청하기</a>
+      <a href="/page/sub4/sub4_02.php">PC방 전문 상권분석 신청하기</a>
     </div>
   </section>
   <section class="section-03">
-    <h3 class="title" id="page2">PC방 운영 21년, 샹떼PC방은 먹거리 Shop in Shop 시스템을<br>제일 먼저 도입하였습니다.</h3>
-    <hr>
+    <h3 class="title" id="page2">
+      PC방 운영 21년, 샹떼PC방은 먹거리 Shop in Shop 시스템을<br />제일 먼저 도입하였습니다.
+    </h3>
+    <hr />
     <section>
-      <article style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_02.png')">
+      <article
+        style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_02.png')"
+      >
         <div class="text">
-          <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_sibulla.png" alt="logo">
-          <p>샹떼PC방에서 1932년부터 사랑받아 온<br>유럽 전통 스웨덴 핫도그</p>
+          <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_sibulla.png" alt="logo" />
+          <p>샹떼PC방에서 1932년부터 사랑받아 온<br />유럽 전통 스웨덴 핫도그</p>
           <span>시빌라핫도그</span>
-          <a href="">시빌라핫도그 메뉴 더보기</a>
+          <a href="javascript:void(0);" onclick="alert('준비중입니다')">시빌라핫도그 메뉴 더보기</a>
         </div>
       </article>
-      <article style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_03.png')">
+      <article
+        style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_03.png')"
+      >
         <div class="text">
-          <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_tospia.png" alt="logo">
-          <p>기름을 사용하지 않고 구워내어<br>깔끔하고 담백한 맛의 프레스 샌드위치</p>
+          <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_tospia.png" alt="logo" />
+          <p>기름을 사용하지 않고 구워내어<br />깔끔하고 담백한 맛의 프레스 샌드위치</p>
           <span>카페 토스피아</span>
-          <a href="">토스피아 메뉴 더보기</a>
+          <a href="javascript:void(0);" onclick="alert('준비중입니다')">토스피아 메뉴 더보기</a>
         </div>
       </article>
     </section>
   </section>
   <h3 class="title" id="page3">먹거리매출도 샹떼PC방이 No.1 입니다.</h3>
-  <hr>
+  <hr />
   <section class="section-04">
     <div class="inner">
       <article class="text">
-        <p class="detail-1">언제까지 PC방에서 게임만 할래?<br>
-          샹떼PC방에서 맛있는 거 먹으면서 게임하자!<br>
-          다양하고 맛있는 먹거리</p>
-        <p class="detail-2">간편함 + 맛을 동시에 잡은<br>
-          <b>샹떼 전용먹거리 ‘스쿡’</b></p>
-        <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_scook.png" alt="logo">
-        <p class="detail-3">샹떼PC방의 전용 먹거리 ‘스쿡(Scook)’은 고객의 입맛과 트렌드에 맞추어<br>
-          시즌 별 신메뉴 출시와 단순한 PC방 먹거리가 아닌<br>
-          안전하고 깨끗한 먹거리, 끊임없는 새로운 맛, 건강하고 다양한 먹거리를 선보입니다.</p>
+        <p class="detail-1">
+          언제까지 PC방에서 게임만 할래?<br />
+          샹떼PC방에서 맛있는 거 먹으면서 게임하자!<br />
+          다양하고 맛있는 먹거리
+        </p>
+        <p class="detail-2">
+          간편함 + 맛을 동시에 잡은<br />
+          <b>샹떼 전용먹거리 ‘스쿡’</b>
+        </p>
+        <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_scook.png" alt="logo" />
+        <p class="detail-3">
+          샹떼PC방의 전용 먹거리 ‘스쿡(Scook)’은 고객의 입맛과 트렌드에 맞추어<br />
+          시즌 별 신메뉴 출시와 단순한 PC방 먹거리가 아닌<br />
+          안전하고 깨끗한 먹거리, 끊임없는 새로운 맛, 건강하고 다양한 먹거리를 선보입니다.
+        </p>
       </article>
       <article class="img">
-        <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_04.png" alt="img">
+        <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_04.png" alt="img" />
         <a href="/page/sub2/sub2_01/sub2_01_scook.php">샹떼 F&B 자세히 보러가기</a>
       </article>
     </div>
   </section>
-  <section class="section-05">
-    <h3 class="title" id="page4">특화된 전용책상 샹떼PC방의 ‘드딩 트윈 데스크’</h3>
-    <hr>
+  <section class="section-05" id="page4">
+    <h3 class="title">특화된 전용책상 샹떼PC방의 '슬라이딩 트윈 데스크’</h3>
+    <hr />
     <div class="inner">
       <article>
         <div class="slider">
           <div class="slide">
-            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_slide_01.png" alt="img">
+            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_slide_01.png" alt="img" />
             <div class="text">
               <span>30cm의 차이</span>
-              <p>고객을 위한 최적화된 길이의 슬라이딩 데스크!<br>
-                다양한 먹거리와 개인 소품을 맘껏 올려두고<br>
-                쾌적하게 게임을 즐길 수 있습니다.</p>
+              <p>
+                고객을 위한 최적화된 길이의 슬라이딩 데스크!<br />
+                다양한 먹거리와 개인 소품을 맘껏 올려두고<br />
+                쾌적하게 게임을 즐길 수 있습니다.
+              </p>
             </div>
           </div>
           <div class="slide">
-            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_slide_02.png" alt="img">
+            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_slide_02.png" alt="img" />
             <div class="text">
-              <span>프리미엄<br>파우더 코트</span>
-              <p>고품질 파우더 코팅으로 상판의 곡선 면이<br>
-부드럽고 깔끔하며, 오랜 기간 사용해도 필름의 들뜸<br>
-현상이 없습니다!</p>
+              <span>프리미엄<br />파우더 코트</span>
+              <p>
+                고품질 파우더 코팅으로 상판의 곡선 면이<br />
+                부드럽고 깔끔하며, 오랜 기간 사용해도 필름의 들뜸<br />
+                현상이 없습니다!
+              </p>
             </div>
           </div>
           <div class="slide">
-            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_slide_03.png" alt="img">
+            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_slide_03.png" alt="img" />
             <div class="text">
               <span>넓고 쾌적한 공간</span>
-              <p>음식을 마음껏 놓고 게임할 수 있는 공간에 만족한<br>
-고객은 타 매장으로의 이탈률이 발생하지 않으며,<br>
-먹거리 매출까지 동반 상승합니다.</p>
+              <p>
+                음식을 마음껏 놓고 게임할 수 있는 공간에 만족한<br />
+                고객은 타 매장으로의 이탈률이 발생하지 않으며,<br />
+                먹거리 매출까지 동반 상승합니다.
+              </p>
             </div>
           </div>
           <div class="slide">
-            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_slide_04.png" alt="img">
+            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_slide_04.png" alt="img" />
             <div class="text">
-              <span>언제나<br>청결함 제공</span>
-              <p>넓은 공간 구성으로 쉽고 빠른 청소가 가능하여<br>
-항상 깔끔하게 유지할 수 있으며,<br>
-고객은 항상 새 매장에 오는 느낌을 받을 수 있습니다.</p>
+              <span>언제나<br />청결함 제공</span>
+              <p>
+                넓은 공간 구성으로 쉽고 빠른 청소가 가능하여<br />
+                항상 깔끔하게 유지할 수 있으며,<br />
+                고객은 항상 새 매장에 오는 느낌을 받을 수 있습니다.
+              </p>
             </div>
           </div>
         </div>
 
-        <p><b>성능 + 디자인 + 실용성</b> 모두 완벽히 갖춘<br>
-          슬라이딩 트윈 데스크, 직접 만나보세요!</p>
+        <p>
+          <b>성능 + 디자인 + 실용성</b> 모두 완벽히 갖춘<br />
+          슬라이딩 트윈 데스크, 직접 만나보세요!
+        </p>
       </article>
       <article>
-        <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_05.png" alt="img">
+        <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_05.png" alt="img" />
       </article>
     </div>
   </section>
-  <section class="section-06">
+  <section class="section-06" id="page5">
     <div class="inner">
-      <h5 class="title" id="page5">전 직원이 참여하는 샹떼PC방의 가맹관리시스템</h5>
-      <hr>
+      <h5 class="title">전 직원이 참여하는 샹떼PC방의 가맹관리시스템</h5>
+      <hr />
       <section>
         <article>
-          <div class="tag">
-            오픈 전
-          </div>
-          <div class="thumb" style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_06.png');">
-          </div>
+          <div class="tag">오픈 전</div>
+          <div
+            class="thumb"
+            style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_06.png')"
+          ></div>
           <div class="text">
             <ul>
               <li>· 준공 일정 확인 및 현장 체크</li>
@@ -196,11 +229,11 @@
           </div>
         </article>
         <article>
-          <div class="tag">
-            오픈 후
-          </div>
-          <div class="thumb" style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_07.png');">
-          </div>
+          <div class="tag">오픈 후</div>
+          <div
+            class="thumb"
+            style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_07.png')"
+          ></div>
           <div class="text">
             <ul>
               <li>· 가맹점 정기 방문 및 문제점 체크</li>
@@ -219,51 +252,67 @@
   </section>
   <section class="section-07">
     <div class="inner">
-      <h5 class="title">샹떼PC방은 매일 아침 각 가맹점의 매출 및 특이사항을 체크합니다.<br>
-        가맹점 문제 발생 시 ‘샹떼PC방 대표가 직접’ 긴급회의를 소집하여 가맹점의 문제를 해결합니다.</h5>
+      <h5 class="title">
+        샹떼PC방은 매일 아침 각 가맹점의 매출 및 특이사항을 체크합니다.<br />
+        가맹점 문제 발생 시 ‘샹떼PC방 대표가 직접’ 긴급회의를 소집하여 가맹점의 문제를 해결합니다.
+      </h5>
       <div class="steps">
         <div class="step">
-          <div class="icon"><img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_04.png" alt="img"></div>
+          <div class="icon">
+            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_04.png" alt="img" />
+          </div>
           <span>STEP 1</span>
-          <p>가맹점<br>문제 발생</p>
+          <p>가맹점<br />문제 발생</p>
         </div>
         <div class="step">
-          <div class="icon"><img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_05.png" alt="img"></div>
+          <div class="icon">
+            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_05.png" alt="img" />
+          </div>
           <span>STEP 2</span>
-          <p>담당 슈퍼바이저<br>전달</p>
+          <p>담당 슈퍼바이저<br />전달</p>
         </div>
         <div class="step">
-          <div class="icon"><img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_06.png" alt="img"></div>
+          <div class="icon">
+            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_06.png" alt="img" />
+          </div>
           <span>STEP 3</span>
-          <p>대표에게<br>문제내용 전달</p>
+          <p>대표에게<br />문제내용 전달</p>
         </div>
         <div class="step">
-          <div class="icon"><img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_07.png" alt="img"></div>
+          <div class="icon">
+            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_07.png" alt="img" />
+          </div>
           <span>STEP 4</span>
-          <p>전 부서<br>긴급회의 소집</p>
+          <p>전 부서<br />긴급회의 소집</p>
         </div>
         <div class="step">
-          <div class="icon"><img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_08.png" alt="img"></div>
+          <div class="icon">
+            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_08.png" alt="img" />
+          </div>
           <span>STEP 5</span>
-          <p>해결방안 제시<br>및 해결</p>
+          <p>해결방안 제시<br />및 해결</p>
         </div>
         <div class="step">
-          <div class="icon"><img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_09.png" alt="img"></div>
+          <div class="icon">
+            <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_icon_09.png" alt="img" />
+          </div>
           <span>STEP 6</span>
-          <p>사후검토 및<br>지속관리</p>
+          <p>사후검토 및<br />지속관리</p>
         </div>
       </div>
-
     </div>
   </section>
-  <section class="section-08"
-    style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_bg_01.png')">
-    <h5 class="title" id="page6">신속한 대응, 샹떼PC방의 전문PC관리 시스템</h5>
-    <hr>
+  <section
+    class="section-08"
+    style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_bg_01.png')"
+    id="page6"
+  >
+    <h5 class="title">신속한 대응, 샹떼PC방의 전문PC관리 시스템</h5>
+    <hr />
     <div class="inner">
       <article>
         <div class="thumb">
-          <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_08.png" alt="thumb">
+          <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_08.png" alt="thumb" />
         </div>
         <p><b>답답한 부팅은 그만!</b>샹떼PC방 노하드 시스템</p>
         <ul>
@@ -274,7 +323,7 @@
       </article>
       <article>
         <div class="thumb">
-          <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_09.png" alt="thumb">
+          <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_09.png" alt="thumb" />
         </div>
         <p><b>컴퓨터를 몰라도 걱정마세요!</b>자동화 PC관리 시스템</p>
         <ul>
@@ -285,7 +334,7 @@
       </article>
       <article>
         <div class="thumb">
-          <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_10.png" alt="thumb">
+          <img src="<?php echo G5_IMG_URL ?>/sub/sub2/sub2_01_img_10.png" alt="thumb" />
         </div>
         <p><b>갑자기 PC에 문제가?!</b>실시간 원격 지원 시스템</p>
         <ul>
@@ -297,51 +346,63 @@
     </div>
   </section>
   <section class="section-09">
-    <h5 class="title">샹떼PC방은 가맹점 695호점을 오픈한 노하우와 경험으로<br>성공창업을 약속드립니다.</h5>
-    <a href="">창업문의하고 창업혜택 받기</a>
+    <h5 class="title">
+      샹떼PC방은 가맹점 695호점을 오픈한 노하우와 경험으로<br />성공창업을 약속드립니다.
+    </h5>
+    <a href="/page/sub4/sub4_02.php">창업문의하고 창업혜택 받기</a>
   </section>
 </div>
 
 <script>
-  $(window).on('scroll', function () {
+  if (location.href.substr(-6, 1) == "#") {
+    $("body, html").animate({
+      scrollTop: $(location.href.slice(-6)).offset().top - 100,
+    });
+  }
+  $(window).on("scroll", function () {
     const scrollTop = $(window).scrollTop();
     if (scrollTop >= 5870) {
-      $('.sub_container .lnb ul li').removeClass('on');
-      $('.sub_container .lnb ul li').eq(5).addClass('on');
-    } else if (scrollTop >= 4540){
-      $('.sub_container .lnb ul li').removeClass('on');
-      $('.sub_container .lnb ul li').eq(4).addClass('on');
+      $(".sub_container .lnb ul li").removeClass("on");
+      $(".sub_container .lnb ul li").eq(5).addClass("on");
+    } else if (scrollTop >= 4540) {
+      $(".sub_container .lnb ul li").removeClass("on");
+      $(".sub_container .lnb ul li").eq(4).addClass("on");
     } else if (scrollTop >= 3440) {
-      $('.sub_container .lnb ul li').removeClass('on');
-      $('.sub_container .lnb ul li').eq(3).addClass('on');
+      $(".sub_container .lnb ul li").removeClass("on");
+      $(".sub_container .lnb ul li").eq(3).addClass("on");
     } else if (scrollTop >= 2365) {
-      $('.sub_container .lnb ul li').removeClass('on');
-      $('.sub_container .lnb ul li').eq(2).addClass('on');
+      $(".sub_container .lnb ul li").removeClass("on");
+      $(".sub_container .lnb ul li").eq(2).addClass("on");
     } else if (scrollTop >= 1470) {
-      $('.sub_container .lnb ul li').removeClass('on');
-      $('.sub_container .lnb ul li').eq(1).addClass('on');
+      $(".sub_container .lnb ul li").removeClass("on");
+      $(".sub_container .lnb ul li").eq(1).addClass("on");
     } else {
-      $('.sub_container .lnb ul li').removeClass('on');
-      $('.sub_container .lnb ul li').eq(0).addClass('on');
+      $(".sub_container .lnb ul li").removeClass("on");
+      $(".sub_container .lnb ul li").eq(0).addClass("on");
     }
   });
 
-  $('#gnb ul > li:nth-child(2) a').on('click', function (e) {
+  $("#gnb ul > li:nth-child(2) a").on("click", function (e) {
     e.preventDefault();
-    $('html, body').animate({
-      'scrollTop': $($(this).attr('href').slice(-6)).offset().top - 100
-    }, 500);
+    $("html, body").animate(
+      {
+        scrollTop: $($(this).attr("href").slice(-6)).offset().top - 100,
+      },
+      500
+    );
   });
 
-  $('.lnb li a').on('click', function (e) {
+  $(".lnb li a").on("click", function (e) {
     e.preventDefault();
-    $('html, body').animate({
-      'scrollTop': $($(this).attr('href')).offset().top - 100
-    }, 500);
+    $("html, body").animate(
+      {
+        scrollTop: $($(this).attr("href")).offset().top - 100,
+      },
+      500
+    );
   });
 
-
-  $('.slider').slick(); 
+  $(".slider").slick();
 </script>
 
 <!-- 여기 아래부터 모든 HTML 요소 구성 끝 -->

@@ -14,7 +14,7 @@
   include_once(G5_PATH.'/head.php');
 ?>
 
-<script src="<?php echo G5_JS_URL ?>/jquery.bxslider.min.js"></script>
+<script src="<?php echo G5_JS_URL ?>/jquery.bxslider.js"></script>
 <link rel="stylesheet" href="./css/sub4_02.css">
 
 <!-- 여기 아래부터 모든 HTML 요소 구성 시작 -->
@@ -68,7 +68,7 @@
             });
           </script>
         </div>
-        <a href="" class="green_btn">더 많은 혜택 확인하러가기</a>
+        <a href="/page/sub3/sub3_04.php#page4" class="green_btn">더 많은 혜택 확인하러가기</a>
       </li>
       <li>
         <div class="first">

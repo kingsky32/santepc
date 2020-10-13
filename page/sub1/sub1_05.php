@@ -14,7 +14,7 @@
   </div>
   <nav class="lnb">
     <ul>
-      <li><a href="/page/sub1/sub1_01.php">상떼PC방</a></li>
+      <li><a href="/page/sub1/sub1_01.php">샹떼PC방</a></li>
       
       <li><a href="/page/sub1/sub1_03.php">연혁</a></li>
       <li><a href="/page/sub1/sub1_04.php">경영이념</a></li>

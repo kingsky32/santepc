@@ -83,7 +83,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
      if (count($list) == 0) { echo "<li class=\"empty_list\">게시물이 없습니다.</li>"; }
      ?>
       </ul>
-      <a href="" class="pink_btn">창업문의하고 창업혜택 받기!</a>
+      <a href="/page/sub4/sub4_02.php" class="pink_btn">창업문의하고 창업혜택 받기!</a>
     </div>
   </div>
 </div>

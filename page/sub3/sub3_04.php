@@ -32,7 +32,7 @@
         </article>
         <article>
           <p>소액부터 최고 한도 3억 5천만원까지<br>유리한 맞춤조건으로 대출을 진행해드립니다.</p>
-          <a href="" class="pink_btn">나의 대출한도 조회하기</a>
+          <a href="/page/sub4/sub4_02.php" class="pink_btn">나의 대출한도 조회하기</a>
           <span>*개인신용도에 따라 차이가 발생할 수 있습니다.</span>
         </article>
       </section>
@@ -46,7 +46,7 @@
       <p>각 가맹점의 목표 매출을 설정하여 오픈 후 목표 매출을 달성하지 못하면<br>
         본사에서 인수 후 재창업을 할 수 있도록 보장해주는 제도입니다.</p>
       <img src="<?php echo G5_IMG_URL ?>/sub/sub3/sub3_04_img_02.png" alt="img">
-      <a href="" class="pink_btn">안심창업스쿨 문의하기</a>
+      <a href="/page/sub4/sub4_02.php" class="pink_btn">안심창업시스템 문의하기</a>
     </div>
   </section>
   <section id="section-03">
@@ -93,7 +93,7 @@
     </div>
   </section>
   <section id="section-04" style="background-image: url('<?php echo G5_IMG_URL ?>/sub/sub3/sub3_04_img_06.png');">
-    <div class="inner">
+    <div class="inner" id="page4">
       <article>
         <p>
           <b>게임하기 좋은 환경,</b>
@@ -197,7 +197,7 @@
   });
   </script>
   <section id="section-05">
-    <div class="inner" id="page4">
+    <div class="inner">
       <section>
         <article>
           <img src="<?php echo G5_IMG_URL ?>/sub/sub3/sub3_04_img_07.png" alt="img">
@@ -357,6 +357,11 @@
 </div>
 
 <script>
+  if (location.href.substr(-6, 1) == "#") {
+    $("body, html").animate({
+      scrollTop: $(location.href.slice(-6)).offset().top - 100,
+    });
+  }
   $(window).on('scroll', function () {
     const scrollTop = $(window).scrollTop();
     if (scrollTop >= 3700.640625){

@@ -63,7 +63,7 @@
 					<nav class="lnb">
 						<ul>
 							<li><a href="/page/sub5/sub5_01.php">샹떼 인테리어</a></li>
-							<li class="on"><a href="/page/sub5/sub5_02.php">인테리어 컨셉소개</a></li>
+							<li class="on"><a href="/page/sub5/sub5_021.php">인테리어 컨셉소개</a></li>
 							<li><a href="/page/sub5/sub5_03.php">VR</a></li>
 						</ul>
 					</nav>

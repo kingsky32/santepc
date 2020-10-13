@@ -12,8 +12,8 @@
   font-family: "NEXON Lv2 Gothic";
   font-size: 36px;
   line-height: 53px;
-  letter-spacing: -.5px;
-  font-weight: 400;
+  letter-spacing: -0.5px;
+  font-weight: 500;
   text-align: center;
   margin-top: 120px;
   margin-bottom: 35px;
@@ -57,13 +57,13 @@
   font-size: 30px;
   font-weight: 500;
   color: #282828;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   margin-bottom: 25px;
   position: relative;
 }
 
 .sub_container section article span::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 193px;
@@ -90,16 +90,17 @@
   font-size: 18px;
   line-height: 30px;
   color: #282828;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   margin-bottom: 40px;
+  font-weight: 500;
 }
 
 .sub_container section article p.notice {
   font-family: "NEXON Lv2 Gothic";
   font-size: 15px;
   line-height: 23px;
-  letter-spacing: -.5px;
-  font-weight: 400;
+  letter-spacing: -0.5px;
+  font-weight: 500;
   color: #fa5f4e;
 }
 
@@ -120,7 +121,8 @@
   box-sizing: border-box;
   color: #979797;
   font-size: 15px;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
+  font-weight: 500;
 }
 
 .sub_container section article a.more:not(:last-child) {
